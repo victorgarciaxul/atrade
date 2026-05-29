@@ -52,7 +52,7 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="bg-green text-white">
+    <footer className="bg-primary text-white">
       {/* Top bar */}
       <div className="max-w-[1512px] mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         {/* Logo + social */}
@@ -118,7 +118,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar: EU logos */}
-      <div className="bg-[#408b58]">
+      <div className="bg-[#001654]">
         <div className="max-w-[1512px] mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-6">
           {/* EU logos left */}
           <div className="flex items-center gap-8">
