@@ -4,9 +4,21 @@ import LatestNews from "@/components/LatestNews";
 import AllNews from "@/components/AllNews";
 import { featuredArticle, sidebarArticles, latestArticles, allArticles, allArticlesExtended } from "@/lib/mockData";
 
+const impulsaFondo = {
+  id: -1,
+  title: "",
+  excerpt: "",
+  category: "",
+  author: "",
+  date: "",
+  readTime: 0,
+  image: "/impulsa-fondo.png",
+  slug: "",
+  isBanner: true,
+};
+
 export default function Home() {
-  // 2 slides: el artículo destacado y el segundo artículo más relevante
-  const sliderSlides = [featuredArticle, allArticlesExtended[4]];
+  const sliderSlides = [impulsaFondo];
 
   return (
     <>

@@ -13,4 +13,6 @@ export interface Article {
   videoUrl?: string;
   /** Imágenes adicionales del artículo. Se rellena desde WordPress. */
   gallery?: string[];
+  /** Si es true, el slide muestra solo la imagen sin texto superpuesto. */
+  isBanner?: boolean;
 }
