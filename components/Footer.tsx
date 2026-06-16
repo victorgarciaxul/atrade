@@ -55,18 +55,8 @@ export default function Footer() {
     <footer className="bg-primary text-white">
       {/* Top bar */}
       <div className="max-w-[1512px] mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-        {/* Logo + social */}
+        {/* Social icons */}
         <div className="flex flex-col gap-4">
-          <div>
-            <Image
-              src="/logo.svg"
-              alt="Andalucía TRADE — Junta de Andalucía"
-              width={220}
-              height={36}
-              style={{ filter: "brightness(0) invert(1)" }}
-            />
-          </div>
-
           {/* Social icons */}
           <div className="flex items-center gap-3">
             {socialIcons.map((icon) => (
@@ -136,16 +126,6 @@ export default function Footer() {
             />
           </div>
 
-          {/* Logos right */}
-          <div>
-            <Image
-              src="/logo.svg"
-              alt="Andalucía TRADE — Junta de Andalucía"
-              width={180}
-              height={30}
-              style={{ filter: "brightness(0) invert(1)" }}
-            />
-          </div>
         </div>
       </div>
     </footer>
