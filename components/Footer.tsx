@@ -115,14 +115,14 @@ export default function Footer() {
             <Image
               src="/cofinanciado.svg"
               alt="Cofinanciado por la Unión Europea"
-              width={143}
-              height={32}
+              width={180}
+              height={40}
             />
             <Image
               src="/fondoseuropeos.svg"
               alt="Ministerio de Hacienda — Fondos Europeos"
-              width={200}
-              height={24}
+              width={260}
+              height={32}
             />
           </div>
 
