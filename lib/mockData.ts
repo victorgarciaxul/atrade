@@ -62,22 +62,34 @@ Junto a su actividad industrial, Ariema mantiene una fuerte presencia internacio
   },
   {
     id: 3,
-    title: "Blanca Torrent, directora de Aceitunas Torrent: «El mercado internacional es el motor de nuestro crecimiento»",
-    excerpt: "La empresaria cordobesa lidera desde Aguilar de la Frontera una empresa referente en la exportación de aceitunas que ha participado en más de 30 acciones internacionales con Andalucía TRADE.",
-    body: `Blanca Torrent es directora general de Aceitunas Torrent, una empresa familiar con sede en Aguilar de la Frontera, Córdoba, que ha convertido la internacionalización en el eje central de su estrategia de crecimiento. Reconocida como una de las 20 mujeres más influyentes de la empresa andaluza, Blanca ha llevado los productos de la empresa a más de 50 países.
+    title: "Torrent: la esencia del olivar cordobés presente en las mesas del mundo",
+    excerpt: "Desde Aguilar de la Frontera, Aceitunas Torrent lleva más de 125 años llevando la aceituna andaluza a más de 80 países. Andalucía TRADE impulsa su internacionalización con el apoyo de fondos FEDER.",
+    body: `Desde la campiña sur de Córdoba hasta más de 80 países de los cinco continentes. Así ha construido su trayectoria Aceitunas Torrent, una empresa familiar nacida en 1898 que ha convertido la aceituna de mesa en una de las grandes embajadoras internacionales del sabor andaluz.
 
-Aceitunas Torrent lleva trabajando con Extenda y Andalucía TRADE desde 2001, habiendo participado en ferias internacionales de primer nivel como Foodex Japón, Seoul Food & Hotel, SIAL Canadá o la Winter Fancy Food de Nueva York. Las acciones cofinanciadas con FEDER han sido determinantes para consolidar su presencia en Asia, donde el sector agroalimentario andaluz bate récords de exportación.
+Con más de 125 años de historia, la compañía representa hoy una de las firmas referentes del sector agroalimentario andaluz y un ejemplo de cómo tradición, internacionalización y liderazgo femenino pueden convivir en una misma empresa.
 
-## Liderazgo femenino en el olivar cordobés
+Ubicada desde 1998 en Aguilar de la Frontera, Córdoba, la empresa cuenta con un complejo de 100.000 metros cuadrados donde centraliza su actividad productiva y logística. Desde allí coordina todo el proceso: desde la recogida de la aceituna hasta el aderezo, envasado, transporte y distribución final. Un modelo integral que le ha permitido destinar cerca del 90% de su producción a la exportación.
 
-Para Blanca Torrent, el éxito de la empresa descansa en tres pilares: calidad del producto, consistencia en la presencia internacional y adaptación a los gustos locales de cada mercado. «No se puede exportar pensando en lo que nos gusta a nosotros; hay que escuchar al cliente», afirma.
+## Internacionalización con respaldo de Andalucía TRADE
 
-La empresa ha participado en el Club Asia, Club Europa y Club América Latina de Andalucía TRADE, además de misiones directas en Indonesia, presentaciones en Osaka y Tokio, y en el evento Andalucía TRADE Global. Todo ello con el apoyo de los Fondos Europeos.`,
+La internacionalización es uno de los pilares del crecimiento de la empresa y para lograrlo cuenta con el respaldo de Andalucía TRADE. Tal y como explica Olalla Ruiz, directora comercial, "es una de las patas que nos ayuda a movernos, a desarrollarnos, a llegar a aquellos mercados en los que queremos estar presentes".
+
+Iniciativas como Club Asia, Club Reino Unido, Club Europa o Club América Latina, impulsadas por Andalucía TRADE y cofinanciadas con fondos FEDER, forman parte de esa estrategia de expansión internacional que continúa llevando la esencia del olivar cordobés a las mesas del mundo.
+
+## Liderazgo femenino de cuarta generación
+
+Al frente de la empresa se encuentra Blanca Torrent Cruz, directora general e hija, nieta y bisnieta de maestros aceituneros. Su perfil combina formación empresarial, especialización en comercio exterior y una amplia vinculación con instituciones empresariales y académicas.
+
+En palabras de Blanca Torrent: "Para generaciones como la mía, que ya empezamos a dar un paso atrás, lo gratificante es ver que otras utilizan ese referente para empujar. También nosotros generamos una red de mujeres en el sector agroalimentario, para que eso sea posible."
+
+Ese liderazgo se traslada también a la filosofía interna de la compañía, donde el componente humano ocupa un lugar prioritario. Varias generaciones de las mismas familias han trabajado y continúan trabajando en la empresa: "Todas las familias que han trabajado en esta empresa son lo importante. No lo es la facturación, no es el margen de beneficio. Son las familias que han podido, con este trabajo, hacer sus sueños realidad."`,
     category: "En femenino",
     author: "Redacción",
-    date: "Abril 2026",
-    readTime: 6,
-    image: "https://picsum.photos/seed/aceitunas/600/400",
+    date: "Mayo 2026",
+    readTime: 5,
+    image: "/torrent-01.jpg",
+    gallery: ["/torrent-02.jpg", "/torrent-03.jpg", "/torrent-04.jpg", "/torrent-05.jpg"],
+    videoUrl: "https://www.youtube.com/watch?v=Fx751OoD9as",
     slug: "blanca-torrent-aceitunas-torrent-en-femenino",
   },
   {
@@ -113,7 +125,7 @@ En 2024, la compañía Airbus la convirtió en primera proveedora española del 
 Skylife Engineering ha participado con Andalucía TRADE en el ADM Sevilla, el Paris Air Show, la misión inversa aeroespacial y el Aeromart Toulouse, todas ellas acciones cofinanciadas con Fondos FEDER que han sido clave para abrir puertas en mercados internacionales.
 
 Para Marín, el mensaje es claro: «Las empresas tecnológicas andaluzas tienen talento y capacidad. Lo que necesitan es apoyo para salir fuera, y eso es exactamente lo que Andalucía TRADE ofrece».`,
-    category: "En femenino",
+    category: "Oculto",
     author: "Redacción",
     date: "Febrero 2026",
     readTime: 7,
