@@ -186,6 +186,46 @@ Junto a la innovación y a la especialización, la sostenibilidad se ha converti
   slug: "planho-consultores-internacionalizacion-trade",
 };
 
+// ─── ADM ───────────────────────────────────────────────────────────────────
+const adm: Article = {
+  id: 14,
+  title: "ADM Sevilla cierra con cifras récord: 1.500 participantes de 30 países y 9.000 reuniones de negocios",
+  excerpt: "Su octava edición registra cifras históricas con 415 empresas participantes, un 29,7% más que la edición anterior, y consolida Sevilla como polo aeroespacial de referencia en Europa.",
+  body: `Aerospace & Defense Meetings-ADM Sevilla 2026 clausuró su octava edición en Fibes con cifras récord: 1.500 profesionales participantes de 30 países, 415 empresas y alrededor de 9.000 reuniones de negocio. Unos resultados que contribuirán a impulsar la industria aeroespacial española y, en particular, la andaluza.
+
+Con este balance, refuerza su carácter de evento de negocio de referencia para el sector aeroespacial de España y el de más participación del sur de Europa, al convertirse en un marco privilegiado para las relaciones comerciales de la industria andaluza y española con el mundo, con noticias de alto interés, protagonizadas principalmente por el anuncio de Airbus de abrir en Sevilla un centro de conversión del A330 MRTT y el contrato de Sofitec con la turca TAI para fabricar componentes para Boeing.
+
+ADM Sevilla, organizado por la Junta de Andalucía, a través de Andalucía TRADE, y por la empresa BCI Aerospace, fue inaugurado por la consejera de Economía, Hacienda, Fondos Europeos y Diálogo Social, Carolina España, y el presidente de Aviones Comerciales de Airbus España, Ricardo Rojas.
+
+## Récord de participación en ADM Sevilla
+
+Con unas cifras de cierre históricas, ADM Sevilla 2026 reunió a 1.500 profesionales —un 11,7% más que en la edición anterior— y 415 empresas —un 29,7% más que en 2024—, procedentes de 30 países. Durante el encuentro se celebraron un total de 9.000 reuniones de negocio en formato B2B.
+
+ADM Sevilla se confirma como cita de gran interés para la industria internacional, hasta el punto de que la mitad de las empresas participantes (50%) son extranjeras, con un total de 55 grandes contratistas (OEMs).
+
+## Grandes anuncios del sector
+
+ADM Sevilla se ha consolidado como centro de las noticias del sector aeroespacial andaluz y español. Airbus anunció la apertura en su planta de San Pablo de Sevilla de un centro de conversión del A330 MRTT para dar respuesta al incremento de la demanda mundial. Este anuncio supondrá la creación de alrededor de 200 puestos de trabajo directos en la industria auxiliar del sector.
+
+Sofitec, patrocinador gold del evento, firmó un contrato con la compañía turca TAI para fabricar de manera conjunta componentes para los aviones Boeing 737 MAX, concretamente aeroestructuras de recubrimiento de la carcasa de los motores de este avión.
+
+## 54 ponentes en 21 conferencias
+
+ADM Sevilla arrancó con una jornada de conferencias plenarias de alto valor estratégico que congregó a cerca de 400 profesionales y altos directivos de las principales compañías del sector aeroespacial y de defensa en España. Los temas tratados abarcaron innovación, ciberseguridad, defensa y las oportunidades de inversión.
+
+## Empresas de 11 regiones españolas
+
+ADM Sevilla refuerza su carácter de gran cita nacional de la industria aeroespacial, al congregar empresas procedentes de prácticamente todo el territorio español: Andalucía, Comunidad de Madrid, Cataluña, País Vasco, Castilla-La Mancha, Castilla y León, Galicia, Navarra, Aragón, Comunidad Valenciana y Asturias.`,
+  category: "Andalucía TRADE informa",
+  author: "Redacción",
+  date: "Mayo 2026",
+  readTime: 5,
+  image: "/adm-01.png",
+  gallery: ["/adm-01.png", "/adm-02.png", "/adm-03.png", "/adm-04.png"],
+  videoUrl: "https://www.youtube.com/watch?v=K6QgSygkJWY",
+  slug: "adm-sevilla-2026-cifras-record-aeroespacial-andalucia",
+};
+
 // ─── EXPORTS ───────────────────────────────────────────────────────────────
 
 export const sidebarArticles: Article[] = [ariema, aceitunastorrent];
@@ -201,4 +241,5 @@ export const allArticlesExtended: Article[] = [
   samafrava,
   antonioespana,
   planho,
+  adm,
 ];
