@@ -81,19 +81,6 @@ export default async function ArticlePage({ params }: Props) {
             </div>
           )}
 
-          {/* Si hay vídeo Y imagen, muestra la imagen pequeña debajo */}
-          {article.videoUrl && (
-            <div className="relative h-[200px] rounded-xl overflow-hidden mb-8 bg-gray-900">
-              <Image
-                src={article.image}
-                alt={article.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 60vw"
-              />
-              <div className="absolute bottom-2 left-3 text-white/80 text-xs">Imagen del artículo</div>
-            </div>
-          )}
 
           {/* Meta: autor / fecha / lectura */}
           <div className="flex items-center gap-3 text-xs text-grey mb-8 pb-6 border-b border-gray-100">
