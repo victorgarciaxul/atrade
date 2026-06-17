@@ -186,6 +186,36 @@ Junto a la innovación y a la especialización, la sostenibilidad se ha converti
   slug: "planho-consultores-internacionalizacion-trade",
 };
 
+// ─── TONELERÍA DEL SUR ────────────────────────────────────────────────────
+const toneleria: Article = {
+  id: 15,
+  title: "La mejor tonelería del mundo exporta a 40 países desde Montilla, Córdoba",
+  excerpt: "Tonelería del Sur, premiada tres veces como Cooperage of The Year, exporta el 95% de su producción bajo la marca Casknolia a destilerías de whisky y ron en todo el mundo.",
+  body: `El pasado mes de abril de 2026, Tonelería del Sur renovó en Londres un título inusual: Cooperage of The Year (Tonelería del Año). Y lo consigue bajo su marca para exportación internacional Casknolia.
+
+Lo que comenzó como un taller artesanal y familiar, ha evolucionado a una marca referente a nivel nacional e internacional en la fabricación de barriles de alta calidad para el sector de los destilados (especialmente whisky y ron). Lo que le ha valido para ser en tres ocasiones la Tonelería del Año: en 2023, 2024 y 2026.
+
+Tonelería del Sur, nacida en 1974 en Montilla (Córdoba), exporta el 95% de su producción. Sus clientes son destilerías de más de cuarenta países, situadas en Escocia, Irlanda, Japón, India y EE. UU, entre otros. La clave de este reconocimiento internacional reside en un valor añadido único: el envinado de sus barricas durante dos años para transferir a la madera de roble de los vinos andaluces con Denominaciones de Origen como son Jerez, Málaga o Montilla-Moriles.
+
+No todos los toneles son iguales, ya que pueden fabricarse con distintos tipos de madera, como roble americano, francés, español o incluso sueco. En este contexto, Casknolia es la marca internacional bajo la que Tonelería del Sur comercializa sus productos en el exterior.
+
+La empresa cuenta, además, con diversas gamas que responden a las necesidades de sus clientes, desde barriles de madera virgen fabricados a medida hasta la reparación de barricas usadas en bodegas de vino, también conocidas como 'botas'.
+
+Su proyecto de ampliación de instalaciones ha sido incentivado con 1.260.852,98 euros por la Agencia Andalucía TRADE y se enmarca en la Línea de Crecimiento y mejora de la competitividad de las Pymes, cofinanciada en un 85% por el Fondo Europeo de Desarrollo Regional, en el marco del Programa Operativo Andalucía FEDER 2021-2027.
+
+## Medio siglo de historia con la mirada en el futuro
+
+La empresa está inmersa en un plan de expansión, tanto de sus instalaciones como en el aumento de su capacidad de producción, la cual calculan que pasará de 12.000 a más de 20.000 barriles anuales. Un reto que pasa por unificar sus instalaciones en Montilla, ya que actualmente trabajan de forma fragmentada en ocho naves distintas repartidas en diferentes localidades. En siguientes fases de su proyecto, las expectativas son incluir una bodega propia y hacer las instalaciones visitables para fomentar el turismo enológico y la economía local.`,
+  category: "Tu proyecto cuenta",
+  author: "Redacción",
+  date: "Mayo 2026",
+  readTime: 4,
+  image: "/toneleria-01.png",
+  gallery: ["/toneleria-01.png", "/toneleria-02.png", "/toneleria-03.png", "/toneleria-04.png"],
+  videoUrl: "https://www.youtube.com/watch?v=cLeFirKtdxY",
+  slug: "toneleria-del-sur-cooperage-year-montilla-cordoba",
+};
+
 // ─── ADM ───────────────────────────────────────────────────────────────────
 const adm: Article = {
   id: 14,
@@ -236,10 +266,14 @@ export const allArticles: Article[] = [samafrava, antonioespana, planho];
 
 export const allArticlesExtended: Article[] = [
   featuredArticle,
+  // Tu proyecto cuenta — Ariema primero, luego Tonelería, después el resto
   ariema,
-  aceitunastorrent,
+  toneleria,
   samafrava,
   antonioespana,
   planho,
+  // En femenino
+  aceitunastorrent,
+  // Andalucía TRADE informa
   adm,
 ];
