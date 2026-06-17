@@ -269,7 +269,7 @@ Junto a la innovación y a la especialización, la sostenibilidad se ha converti
     readTime: 5,
     image: "/planho-01.jpg",
     gallery: ["/planho-02.jpg", "/planho-03.jpg", "/planho-04.jpg"],
-    videoUrl: "https://www.youtube.com/watch?v=Fx75IOoD9as",
+    videoUrl: "https://www.youtube.com/watch?v=Fx751OoD9as",
     slug: "planho-consultores-internacionalizacion-trade",
   },
   {
