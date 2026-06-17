@@ -9,7 +9,7 @@ interface CategoryPageProps {
   /** Artículo grande destacado (columna izquierda) */
   featured: Article;
   /** Artículo grande de la rejilla asimétrica (tarjeta grande) */
-  bigCard: Article;
+  bigCard: Article | null;
   /** Cuatro artículos pequeños (2×2) de la rejilla asimétrica */
   smallCards: Article[];
   /** Artículos de la última fila (3 columnas) */
@@ -85,60 +85,68 @@ export default function CategoryPage({
       </div>
 
       {/* ── Sección 2: Rejilla asimétrica ────────────────────────── */}
-      <h2 className="font-brand text-primary text-2xl font-[500] mb-6">
-        {pageTitle}
-      </h2>
+      {(bigCard || smallCards.length > 0) && (
+        <>
+          <h2 className="font-brand text-primary text-2xl font-[500] mb-6">
+            {pageTitle}
+          </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 mb-14">
-        {/* Tarjeta grande */}
-        <Link href={`/article/${bigCard.slug}`} className="flex flex-col gap-3 cursor-pointer group">
-          <div className="relative h-[380px] rounded-2xl overflow-hidden bg-gray-900">
-            <Image
-              src={bigCard.image}
-              alt={bigCard.title}
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-300"
-              sizes="(max-width: 1024px) 100vw, 60vw"
-            />
-          </div>
-          <h3 className="font-brand text-primary text-[20px] font-[500] line-clamp-2 leading-snug group-hover:text-green transition-colors duration-200">
-            {bigCard.title}
-          </h3>
-          <p className="text-secondary text-sm line-clamp-3 leading-relaxed">
-            {bigCard.excerpt}
-          </p>
-          <div className="flex items-center gap-2 text-xs text-grey">
-            <span>{bigCard.category}</span>
-            <span>|</span>
-            <span>{bigCard.readTime} mins read</span>
-          </div>
-        </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 mb-14">
+            {/* Tarjeta grande */}
+            {bigCard && (
+              <Link href={`/article/${bigCard.slug}`} className="flex flex-col gap-3 cursor-pointer group">
+                <div className="relative h-[380px] rounded-2xl overflow-hidden bg-gray-900">
+                  <Image
+                    src={bigCard.image}
+                    alt={bigCard.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                  />
+                </div>
+                <h3 className="font-brand text-primary text-[20px] font-[500] line-clamp-2 leading-snug group-hover:text-green transition-colors duration-200">
+                  {bigCard.title}
+                </h3>
+                <p className="text-secondary text-sm line-clamp-3 leading-relaxed">
+                  {bigCard.excerpt}
+                </p>
+                <div className="flex items-center gap-2 text-xs text-grey">
+                  <span>{bigCard.category}</span>
+                  <span>|</span>
+                  <span>{bigCard.readTime} mins read</span>
+                </div>
+              </Link>
+            )}
 
-        {/* 2×2 tarjetas pequeñas */}
-        <div className="grid grid-cols-2 gap-4">
-          {smallCards.map((card) => (
-            <Link key={card.id} href={`/article/${card.slug}`} className="flex flex-col gap-2 cursor-pointer group">
-              <div className="relative h-[150px] rounded-xl overflow-hidden bg-gray-900">
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 1024px) 50vw, 20vw"
-                />
+            {/* 2×2 tarjetas pequeñas */}
+            {smallCards.length > 0 && (
+              <div className="grid grid-cols-2 gap-4">
+                {smallCards.map((card) => (
+                  <Link key={card.id} href={`/article/${card.slug}`} className="flex flex-col gap-2 cursor-pointer group">
+                    <div className="relative h-[150px] rounded-xl overflow-hidden bg-gray-900">
+                      <Image
+                        src={card.image}
+                        alt={card.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 1024px) 50vw, 20vw"
+                      />
+                    </div>
+                    <h4 className="font-brand text-primary text-[13px] font-[500] line-clamp-2 leading-snug group-hover:text-green transition-colors duration-200">
+                      {card.title}
+                    </h4>
+                    <div className="flex items-center gap-2 text-xs text-grey">
+                      <span>{card.category}</span>
+                      <span>|</span>
+                      <span>{card.date}</span>
+                    </div>
+                  </Link>
+                ))}
               </div>
-              <h4 className="font-brand text-primary text-[13px] font-[500] line-clamp-2 leading-snug group-hover:text-green transition-colors duration-200">
-                {card.title}
-              </h4>
-              <div className="flex items-center gap-2 text-xs text-grey">
-                <span>{card.category}</span>
-                <span>|</span>
-                <span>{card.date}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
+            )}
+          </div>
+        </>
+      )}
 
       {/* ── Sección 3: Rejilla de 3 columnas ─────────────────────── */}
       {gridCards.length > 0 && (
