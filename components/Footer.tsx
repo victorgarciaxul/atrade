@@ -1,30 +1,13 @@
 import Image from "next/image";
 
 const footerLinks = [
-  {
-    heading: "Quiénes somos",
-    links: ["Historia", "Equipo", "Consejo", "Memorias anuales", "Noticias", "Contacto"],
-  },
-  {
-    heading: "Empresas",
-    links: ["Internacionalización", "Financiación", "Formación", "Asesoramiento", "Ferias", "Misiones comerciales"],
-  },
-  {
-    heading: "Inversión",
-    links: ["Por qué Andalucía", "Sectores", "Oportunidades", "Incentivos", "Trámites", "Contacto inversores"],
-  },
-  {
-    heading: "Innovación",
-    links: ["I+D+i", "Tecnología", "Ecosistema startup", "Transferencia tecnológica", "Proyectos europeos", "Redes"],
-  },
-  {
-    heading: "Formación",
-    links: ["Máster", "Cursos", "Becas", "Online", "Presencial", "Empresas"],
-  },
-  {
-    heading: "Nuestros podcasts",
-    links: ["Todo sobre Andalucía", "Conviértete en exportador", "¿Hay vida fuera?", "Nuestros barrios", "Desde el Sur", "El futuro es hoy"],
-  },
+  { label: "Quiénes somos", href: "/categories" },
+  { label: "Entrevista", href: "/entrevista" },
+  { label: "A fondo", href: "/a-fondo" },
+  { label: "Andalucía TRADE informa", href: "/andalucia-trade-informa" },
+  { label: "Tu proyecto cuenta", href: "/tu-proyecto-cuenta" },
+  { label: "En femenino", href: "/en-femenino" },
+  { label: "Streaming", href: "/streaming" },
 ];
 
 const socialIcons = [
@@ -102,21 +85,16 @@ export default function Footer() {
         <div className="h-[0.5px] bg-white/20" />
       </div>
 
-      {/* Links grid */}
-      <div className="max-w-[1512px] mx-auto px-6 py-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
-        {footerLinks.map((col) => (
-          <div key={col.heading} className="flex flex-col gap-3">
-            <h4 className="font-brand text-white text-sm font-[500]">{col.heading}</h4>
-            <ul className="flex flex-col gap-2">
-              {col.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-white/70 text-xs hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* Links */}
+      <div className="max-w-[1512px] mx-auto px-6 py-8 flex flex-wrap gap-x-8 gap-y-3">
+        {footerLinks.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            className="text-white/70 text-sm hover:text-white transition-colors duration-200"
+          >
+            {link.label}
+          </a>
         ))}
       </div>
 
