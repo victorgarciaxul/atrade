@@ -32,23 +32,33 @@ El sistema se completa con instrumentos de financiación reembolsable: fondos de
 export const sidebarArticles: Article[] = [
   {
     id: 2,
-    title: "Ariema Enerxia fabrica en Huelva electrolizadores de hidrógeno verde que pueden instalarse en cualquier rincón del mundo",
-    excerpt: "La empresa onubense ha puesto en marcha una planta de fabricación de electrolizadores de hidrógeno de 0,5 MW en contenedores estándar con una inversión incentivada de más de 3,6 millones de euros.",
-    body: `Ariema Enerxia nació en Huelva con un objetivo claro: democratizar la producción de hidrógeno verde. La empresa ha desarrollado un sistema de electrolizadores de 0,5 MW en contenedores estándar que permite generar hidrógeno en cualquier ubicación, eliminando las barreras logísticas que han frenado históricamente la adopción de esta tecnología.
+    title: "Ariema refuerza desde Huelva su apuesta por el hidrógeno verde con tecnología propia y foco en la industria",
+    excerpt: "La empresa onubense, nacida como spin-off del INTA, diseña y fabrica electrolizadores propios y proyecta la ampliación de su capacidad productiva con un incentivo de 3,6 millones de euros cofinanciado con fondos FEDER.",
+    body: `La empresa Ariema avanza en el desarrollo industrial del hidrógeno verde en España desde su centro de Huelva, donde diseña y fabrica electrolizadores propios y proyecta la ampliación de su capacidad productiva. Nacida como spin off del Instituto Nacional de Técnica Aeroespacial (INTA), la compañía se ha posicionado como uno de los actores pioneros en un sector clave para la descarbonización.
 
-El proyecto incentivado por Andalucía TRADE consiste en la puesta en marcha de una planta de fabricación de estos electrolizadores modulares. La inversión subvencionable asciende a 6.840.816,02 euros, con una ayuda aprobada de 3.694.040,65 euros cofinanciada con Fondos FEDER.
+"Empezamos dedicándonos al hidrógeno verde en el ámbito de la consultoría y la formación", recuerda Rafael Luque, consejero delegado de la firma. Ese origen técnico ha servido de base para la evolución de la empresa hacia el diseño y fabricación de equipos industriales capaces de producir hidrógeno renovable a partir de agua y electricidad.
 
-## Una apuesta por la energía del futuro
+El salto a la producción llegó en 2006 con la creación de Ariema Energía, filial ubicada en Huelva, donde la compañía concentra hoy su actividad. Desde estas instalaciones desarrolla electrolizadores propios, una tecnología todavía incipiente en el tejido industrial español. "Somos la primera empresa española especializada en hidrógeno verde y también la primera que se dedica a diseñar y fabricar electrolizadores en esta fase", subraya Luque.
 
-Los electrolizadores de Ariema pueden instalarse tanto en plantas industriales que necesitan descarbonizar sus procesos como en entornos rurales o insulares donde el acceso a la red eléctrica es limitado. Esta flexibilidad los convierte en una solución única en el mercado europeo.
+## Investigación e inversión
 
-La empresa trabaja de la mano de Andalucía TRADE para explorar mercados internacionales donde la demanda de hidrógeno verde está creciendo exponencialmente, especialmente en el norte de Europa y en mercados emergentes de Asia.`,
+El crecimiento de Ariema se apoya en un intenso esfuerzo en investigación. La empresa ha culminado recientemente un proyecto de I+D de cinco años con una inversión superior a los 20 millones de euros, que ha permitido multiplicar por diez el tamaño de sus equipos. Este avance marca el paso de la fase experimental a la comercialización.
+
+En paralelo, la compañía trabaja en la ampliación de su fábrica en Huelva, un proyecto planteado en varias fases que contempla la creación de hasta 500 empleos directos. La iniciativa cuenta con el respaldo de Andalucía TRADE y ha recibido un incentivo de 3,6 millones de euros enmarcado en la Línea de Crecimiento y mejora de la competitividad de las pymes, cofinanciada en un 85% por el Fondo Europeo de Desarrollo Regional.
+
+## Un nicho de mercado estratégico
+
+A diferencia de otros operadores del sector, Ariema centra su estrategia en instalaciones de pequeña y mediana escala, entre 0,5 y 5 megavatios, dirigidas principalmente a movilidad, estaciones de servicio y pymes industriales. "Pensamos en industrias que quieren sustituir el gas natural por hidrógeno. Ese sector, muy abundante en España, es donde nuestras máquinas pueden aportar valor", explica Luque.
+
+Junto a su actividad industrial, Ariema mantiene una fuerte presencia internacional en consultoría y formación, con proyectos en Europa, Latinoamérica y el norte de África.`,
     category: "Tu proyecto cuenta",
     author: "Redacción",
-    date: "Marzo 2026",
-    readTime: 4,
-    image: "https://picsum.photos/seed/ariema/600/400",
-    slug: "ariema-enerxia-electrolizadores-hidrogeno-verde-huelva",
+    date: "Mayo 2026",
+    readTime: 5,
+    image: "/ariema-01.png",
+    gallery: ["/ariema-02.png", "/ariema-03.png", "/ariema-04.png"],
+    videoUrl: "https://www.youtube.com/watch?v=v8BIOks-qXY",
+    slug: "ariema-enerxia-hidrogeno-verde-huelva",
   },
   {
     id: 3,
@@ -116,13 +126,30 @@ Para Marín, el mensaje es claro: «Las empresas tecnológicas andaluzas tienen 
 export const latestArticles: Article[] = [
   {
     id: 6,
-    title: "Samafrava amplía su planta de embalajes en Rute con una inversión de 2,5 millones de euros respaldada por Fondos FEDER",
-    excerpt: "La empresa cordobesa especializada en envases y embalajes de plástico ha acometido una importante ampliación de instalaciones y capacidad productiva con el apoyo de Andalucía TRADE.",
+    title: "Samafrava impulsa su crecimiento en el sector del envase alimentario con la ampliación de sus instalaciones en Rute",
+    excerpt: "La empresa cordobesa especializada en envases y embalajes de plástico para el sector alimentario amplía capacidad productiva con el respaldo de Andalucía TRADE y un incentivo de 1,2 millones de euros cofinanciado con fondos FEDER.",
+    body: `La empresa cordobesa Samafrava, especializada en envases y embalajes de plástico para el sector alimentario, ha puesto en marcha un proyecto de ampliación e inversión tecnológica que refuerza su competitividad y apuesta por la sostenibilidad, con el respaldo de Andalucía TRADE.
+
+Con más de 50 años de historia, Samafrava es hoy un referente en fabricación de envases y embalajes de plástico. Ubicados en Rute (Córdoba), dieron sus primeros pasos en la producción de bolsas de plástico para supermercados y tiendas. Hoy en día, el 80% de su negocio se centra en la fabricación de una amplia gama de envases alimentarios, presentes ya en mercados internacionales.
+
+Sus productos están alineados con la economía circular y la sostenibilidad, gracias al uso de materiales compostables, biodegradables y reciclados. En línea con este compromiso, Samafrava cuenta con un laboratorio de I+D para el desarrollo de sus productos: "Somos conscientes de la responsabilidad que tenemos con la sociedad y, en todo lo que dependa de nosotros, se apostará por productos mejores para el planeta", afirma su director general, Manuel Córdoba.
+
+## Inversión con respaldo europeo
+
+Su proyecto de ampliación de instalaciones e inversión en nueva maquinaria ha sido incentivado con 1.245.969,34 euros por Andalucía TRADE, enmarcado en la Línea de Crecimiento y mejora de la competitividad de las Pymes, cofinanciada en un 85% por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Andalucía FEDER 2021-2027.
+
+Esta inversión es, en palabras del director general, "un plus, una bombona de oxígeno porque uno de los hándicaps de las empresas, precisamente, es el problema de la financiación". El resultado se refleja en el aumento de la capacidad productiva y en una mayor competitividad y rentabilidad dentro del sector.
+
+## Proyección internacional
+
+El salto a nuevos mercados internacionales europeos también está presente en la hoja de ruta de Samafrava. La empresa cordobesa ya está presente en países como Italia, Suiza, Francia, Portugal y Reino Unido, reforzando así su crecimiento fuera de España.`,
     category: "Tu proyecto cuenta",
     author: "Redacción",
-    date: "Febrero 2026",
+    date: "Mayo 2026",
     readTime: 4,
-    image: "https://picsum.photos/seed/samafrava/600/400",
+    image: "/samafrava-01.jpg",
+    gallery: ["/samafrava-02.jpg", "/samafrava-03.jpg"],
+    videoUrl: "https://www.youtube.com/watch?v=KUkh-s94b9k",
     slug: "samafrava-ampliacion-planta-embalajes-rute-cordoba",
   },
   {
@@ -149,13 +176,32 @@ export const latestArticles: Article[] = [
   },
   {
     id: 9,
-    title: "Antonio España e Hijos transforma los residuos inertes de Huelva en materiales valorizados con apoyo europeo",
-    excerpt: "La empresa onubense, Premio Pyme del Año 2025 en Huelva, ha puesto en marcha un proyecto de separación y clasificación de residuos inertes con una inversión aprobada de 400.000 euros.",
+    title: "Antonio España refuerza su apuesta por la economía circular con nuevos proyectos de valorización de residuos",
+    excerpt: "Con más de 70 años de trayectoria, la empresa onubense Antonio España Environment & Recycling impulsa sus proyectos de valorización de residuos industriales con un incentivo de 400.000 euros de Andalucía TRADE cofinanciado con fondos FEDER.",
+    body: `Con más de 70 años de trayectoria, Antonio España Environment & Recycling refuerza su posicionamiento en la gestión de residuos industriales con nuevos proyectos de valorización, impulsados con financiación europea a través de la Agencia Andalucía TRADE.
+
+La empresa onubense, fundada en 1954 como un negocio local de recuperación de materiales, se ha convertido en una compañía especializada en la gestión de residuos industriales, incluidos los peligrosos, y opera bajo un modelo de economía circular con proyección europea. La compañía ha destinado recursos significativos a la modernización de sus instalaciones y maquinaria para optimizar la clasificación de metales y asegurar su reincorporación al ciclo industrial.
+
+Una de las claves de esta evolución es la nueva planta de tratamiento de chatarra férrica que permitirá aumentar la capacidad productiva. Según explica José Antonio Peguero, director adjunto de la empresa, el futuro es ambicioso: "Igual que hemos hecho con la chatarra férrica, hay proyectos previstos como el tratamiento del hormigón, de forma que vamos a poder separar, por un lado, lo que son los áridos y, por otro lado, la chatarra férrica".
+
+## El respaldo financiero como acelerador
+
+La empresa ha recibido un incentivo de 400.000€ dentro de la línea de Proyectos de inversión y crecimiento para la mejora de la competitividad de las pymes impulsada por Andalucía TRADE y cofinanciada con fondos FEDER.
+
+Antonio España ha participado, además, en numerosas acciones organizadas por la Agencia andaluza: jornadas sobre el sector del reciclaje, oportunidades de licitación internacional o misiones comerciales inversas. La empresa fue finalista provincial en la categoría de Trayectoria Empresarial de la primera edición de los Premios Andalucía TRADE.
+
+"El apoyo de los Fondos Europeos, canalizados a través de Andalucía TRADE, ha sido clave para poder impulsar nuestro proyecto de tratamiento y valorización de la chatarra férrica. Y ha sido un acelerador para su puesta en marcha", destaca Peguero.
+
+## Presencia internacional y compromiso local
+
+Aunque su corazón late en Huelva, el alcance de Antonio España es internacional. Actualmente, la empresa trabaja estrechamente con fundiciones de Alemania, Francia e Italia, mercados que ya representan entre el 5% y el 7% de su facturación. Hoy, la tercera generación de la familia se sitúa al frente de esta expansión, garantizando un fuerte compromiso con el medioambiente, el desarrollo de su entorno y la generación de empleo de calidad.`,
     category: "Tu proyecto cuenta",
     author: "Redacción",
-    date: "Marzo 2026",
+    date: "Mayo 2026",
     readTime: 4,
-    image: "https://picsum.photos/seed/antonioespana/600/400",
+    image: "/antonio-espana-01.png",
+    gallery: ["/antonio-espana-02.png", "/antonio-espana-03.png", "/antonio-espana-04.png"],
+    videoUrl: "https://www.youtube.com/watch?v=ZYX-PVn3pO0",
     slug: "antonio-espana-hijos-residuos-inertes-huelva",
   },
 ];
@@ -198,13 +244,32 @@ export const allArticles: Article[] = [
   },
   {
     id: 13,
-    title: "Planho Consultores expande su negocio hacia Asia, América Latina y el Golfo Pérsico de la mano de Andalucía TRADE",
-    excerpt: "La firma sevillana de consultoría internacional ha participado en Clubs sectoriales, misiones directas y encuentros con embajadas de Filipinas, Paraguay y países del Golfo.",
+    title: "Lo que no se ve de un hospital: la arquitectura de la empresa sevillana Planho Consultores",
+    excerpt: "La firma sevillana especializada en arquitectura e ingeniería hospitalaria se consolida como referente nacional e internacional con el apoyo de Andalucía TRADE y fondos europeos.",
+    body: `Detrás de cada pasillo, de cada quirófano o de cada área de cuidados intensivos en cualquier hospital hay equipos especializados que convierten la complejidad sanitaria en espacios funcionales, eficientes y pensados para el paciente. En ese ámbito, la firma sevillana Planho Consultores se ha consolidado como un referente nacional e internacional.
+
+Fundada en 1997 en Sevilla, Planho Consultores es un estudio especializado en arquitectura, planificación e ingeniería hospitalaria con identidad propia. "Nos gusta resolver proyectos complejos, especialmente si mejoran el bien común. Es el ADN de la empresa. Los hospitales son los edificios más interesantes, de mayor escala, más socioculturales", explica Enrique Valdecillos, gerente de la compañía.
+
+La compañía ha participado en algunos de los principales proyectos sanitarios de Andalucía, como el Hospital Reina Sofía de Córdoba, el Hospital Universitario San Cecilio de Granada o el Hospital Doctor Muñoz Cariñanos de Sevilla. A estos se suma su próximo reto: la ampliación del área materno-infantil del Hospital Juan Ramón Jiménez de Huelva.
+
+## Proyección internacional con respaldo institucional
+
+La capacidad de abordar proyectos de alta complejidad ha impulsado a la compañía más allá del ámbito nacional. En este proceso de proyección exterior, el respaldo de Andalucía TRADE ha sido clave. A través de distintas iniciativas cofinanciadas con fondos europeos, la Agencia ha colaborado facilitando el contacto con embajadas, delegaciones y mercados estratégicos.
+
+"Nos ayuda a nivel de contactos, de ferias, de conocimiento de la filosofía del país en el que nos queremos implantar", señala José Carlos Palmer, director internacional de Planho Consultores. "Dar el salto al exterior sin esa información sería mucho más difícil y complejo".
+
+Su expansión comenzó en Perú, donde la empresa estableció hace más de una década una sucursal que actúa como base para sus operaciones en América Latina. Desde allí han desarrollado proyectos en Brasil, Chile o México, con una trayectoria global que llega también a Europa, África, Oriente Medio y Asia.
+
+## Sostenibilidad como pilar
+
+Junto a la innovación y a la especialización, la sostenibilidad se ha convertido en otro de los pilares fundamentales de Planho Consultores. La compañía apuesta por un modelo de arquitectura hospitalaria que combine eficiencia energética, optimización de recursos y bienestar del paciente, integrando soluciones que reduzcan el impacto ambiental y mejoren la experiencia asistencial.`,
     category: "Tu proyecto cuenta",
     author: "Redacción",
-    date: "Febrero 2026",
+    date: "Mayo 2026",
     readTime: 5,
-    image: "https://picsum.photos/seed/planho/600/400",
+    image: "/planho-01.jpg",
+    gallery: ["/planho-02.jpg", "/planho-03.jpg", "/planho-04.jpg"],
+    videoUrl: "https://www.youtube.com/watch?v=Fx75IOoD9as",
     slug: "planho-consultores-internacionalizacion-trade",
   },
   {
