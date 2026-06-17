@@ -89,7 +89,7 @@ Ese liderazgo se traslada también a la filosofía interna de la compañía, don
     readTime: 5,
     image: "/torrent-01.jpg",
     gallery: ["/torrent-02.jpg", "/torrent-03.jpg", "/torrent-04.jpg", "/torrent-05.jpg"],
-    videoUrl: "https://www.youtube.com/watch?v=Fx751OoD9as",
+    videoUrl: "https://www.youtube.com/watch?v=IWZMwtnYCQM",
     slug: "blanca-torrent-aceitunas-torrent-en-femenino",
   },
   {
