@@ -1,15 +1,21 @@
 import CategoryPage from "@/components/CategoryPage";
 import { allArticlesExtended } from "@/lib/mockData";
 
-export default function TuProyectoCuentaPage() {
+export default function TuProyectaCuentaPage() {
   const pool = allArticlesExtended.filter((a) => a.category === "Tu proyecto cuenta");
-  const fallback = allArticlesExtended.filter((a) => a.category !== "Tu proyecto cuenta");
-  const all = [...pool, ...fallback];
 
-  const featured = all[0];
-  const bigCard = all[1] ?? all[0];
-  const smallCards = [all[2] ?? all[0], all[3] ?? all[1], all[4] ?? all[0], all[5] ?? all[1]];
-  const gridCards = all.slice(6, 9);
+  const featured = pool[0];
+  const bigCard = pool[1] ?? null;
+  const smallCards = pool.slice(2, 6);
+  const gridCards = pool.slice(6, 9);
+
+  if (!featured) {
+    return (
+      <main className="max-w-[1512px] mx-auto px-6 py-16 text-center text-gray-400">
+        Próximamente
+      </main>
+    );
+  }
 
   return (
     <CategoryPage
