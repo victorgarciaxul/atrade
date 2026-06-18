@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Quienes somos", href: "/categories" },
+  { label: "Quiénes somos", href: "/categories" },
   { label: "Entrevista", href: "/entrevista" },
   { label: "A fondo", href: "/a-fondo" },
   { label: "Andalucía TRADE informa", href: "/andalucia-trade-informa" },
