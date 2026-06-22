@@ -25,6 +25,7 @@ El sistema se completa con instrumentos de financiación reembolsable: fondos de
   date: "Mayo 2026",
   readTime: 5,
   image: "https://picsum.photos/seed/atrade-afondo/800/500",
+  videoUrl: "https://youtu.be/CLBQ8P7eV9E",
   slug: "sistema-financiacion-empresarial-andalucia-trade",
 };
 
