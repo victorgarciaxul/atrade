@@ -187,6 +187,34 @@ Junto a la innovación y a la especialización, la sostenibilidad se ha converti
   slug: "planho-consultores-internacionalizacion-trade",
 };
 
+// ─── ENTREVISTA: CAROLINA ESPAÑA ──────────────────────────────────────────
+const carolinaespana: Article = {
+  id: 16,
+  title: "Carolina España Reina: \"Andalucía TRADE es el motor que conecta el talento andaluz con el mundo\"",
+  excerpt: "La consejera de Economía, Hacienda, Fondos Europeos y Diálogo Social y presidenta de Andalucía TRADE reflexiona sobre los retos de la internacionalización empresarial y el papel estratégico de la agencia.",
+  body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Una visión estratégica para Andalucía
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+
+## El papel de Andalucía TRADE
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+
+Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.`,
+  category: "Entrevista",
+  author: "Redacción",
+  date: "Junio 2026",
+  readTime: 6,
+  image: "/carolina.jpg",
+  slug: "entrevista-carolina-espana-reina-andalucia-trade",
+};
+
 // ─── TONELERÍA DEL SUR ────────────────────────────────────────────────────
 const toneleria: Article = {
   id: 15,
@@ -267,6 +295,8 @@ export const allArticles: Article[] = [samafrava, antonioespana, planho];
 
 export const allArticlesExtended: Article[] = [
   featuredArticle,
+  // Entrevista
+  carolinaespana,
   // Tu proyecto cuenta — Ariema primero, luego Tonelería, después el resto
   ariema,
   toneleria,
