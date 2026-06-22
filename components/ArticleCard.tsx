@@ -7,7 +7,7 @@ export default function ArticleCard({ article }: { article: Article }) {
       <div className="relative h-[280px] rounded-2xl overflow-hidden">
         <Image
           src={article.image}
-          alt={article.title}
+          alt=""
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, 25vw"
@@ -22,7 +22,7 @@ export default function ArticleCard({ article }: { article: Article }) {
       <div className="flex items-center gap-2 text-xs text-grey">
         <span>{article.category}</span>
         <span>|</span>
-        <span>{article.readTime} mins read</span>
+        <span>{article.readTime} min de lectura</span>
       </div>
     </div>
   );

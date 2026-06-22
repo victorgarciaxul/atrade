@@ -7,7 +7,7 @@ export default function SidebarCard({ article }: { article: Article }) {
       <div className="relative w-[100px] h-[80px] shrink-0 rounded-lg overflow-hidden">
         <Image
           src={article.image}
-          alt={article.title}
+          alt=""
           fill
           className="object-cover"
           sizes="100px"
@@ -25,7 +25,7 @@ export default function SidebarCard({ article }: { article: Article }) {
         <div className="flex items-center gap-2 text-xs text-grey">
           <span>{article.category}</span>
           <span>|</span>
-          <span>{article.readTime} mins read</span>
+          <span>{article.readTime} min de lectura</span>
         </div>
       </div>
     </div>

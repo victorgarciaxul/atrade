@@ -42,7 +42,7 @@ export default function StreamingPage() {
             <div className="flex items-center gap-2 text-xs text-grey">
               <span>{all[0].author}</span>
               <span>|</span>
-              <span>{all[0].readTime} mins read</span>
+              <span>{all[0].readTime} min de lectura</span>
             </div>
             <Link
               href={`/article/${all[0].slug}`}

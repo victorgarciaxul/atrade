@@ -10,7 +10,7 @@ export default function BannerImpulsa() {
       >
         <Image
           src="/banner-fondo.png"
-          alt="Andalucía TRADE IMPULSA"
+          alt=""
           fill
           className="object-cover object-center"
           priority
@@ -18,18 +18,14 @@ export default function BannerImpulsa() {
         />
 
         <div className="absolute inset-0 flex items-center">
-          <div className="w-full max-w-[1512px] mx-auto px-6 h-full relative">
-            {/* Solo texto 1 — izquierda */}
-            <div className="absolute left-6 top-[28%] w-[34%] lg:w-[32%]">
-              <Image
-                src="/banner-texto1.png"
-                alt="Andalucía TRADE IMPULSA"
-                width={647}
-                height={208}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
+          <div className="w-full max-w-[1512px] mx-auto px-6">
+            <p className="text-white/80 text-sm font-[500] uppercase tracking-widest mb-2">
+              Revista Andalucía TRADE
+            </p>
+            <h1 className="font-brand text-white font-[700] text-[72px] lg:text-[96px] leading-none">
+              IMPULSA
+            </h1>
+            <div className="mt-3 h-1 w-16 bg-green rounded-full" />
           </div>
         </div>
       </div>
@@ -38,7 +34,7 @@ export default function BannerImpulsa() {
       <div className="relative w-full overflow-hidden sm:hidden" style={{ aspectRatio: "4 / 3" }}>
         <Image
           src="/banner-fondo.png"
-          alt="Andalucía TRADE IMPULSA"
+          alt=""
           fill
           className="object-cover object-[60%_center]"
           priority
@@ -47,15 +43,14 @@ export default function BannerImpulsa() {
 
         <div className="absolute inset-0 bg-primary/40" />
 
-        <div className="absolute left-6 top-[20%] w-[70%]">
-          <Image
-            src="/banner-texto1.png"
-            alt="Andalucía TRADE IMPULSA"
-            width={647}
-            height={208}
-            className="w-full h-auto"
-            priority
-          />
+        <div className="absolute left-6 top-[20%]">
+          <p className="text-white/80 text-xs font-[500] uppercase tracking-widest mb-2">
+            Revista Andalucía TRADE
+          </p>
+          <h1 className="font-brand text-white font-[700] text-[52px] leading-none">
+            IMPULSA
+          </h1>
+          <div className="mt-3 h-1 w-12 bg-green rounded-full" />
         </div>
       </div>
     </>

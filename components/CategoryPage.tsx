@@ -46,7 +46,7 @@ export default function CategoryPage({
           ) : (
             <Image
               src={featured.image}
-              alt={featured.title}
+              alt=""
               fill
               className="object-cover"
               priority
@@ -72,7 +72,7 @@ export default function CategoryPage({
             <div className="flex items-center gap-2 text-xs text-grey">
               <span>{featured.author}</span>
               <span>|</span>
-              <span>{featured.readTime} mins read</span>
+              <span>{featured.readTime} min de lectura</span>
             </div>
             <Link
               href={`/article/${featured.slug}`}
@@ -98,7 +98,7 @@ export default function CategoryPage({
                 <div className="relative h-[380px] rounded-2xl overflow-hidden bg-gray-900">
                   <Image
                     src={bigCard.image}
-                    alt={bigCard.title}
+                    alt=""
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 1024px) 100vw, 60vw"
@@ -113,7 +113,7 @@ export default function CategoryPage({
                 <div className="flex items-center gap-2 text-xs text-grey">
                   <span>{bigCard.category}</span>
                   <span>|</span>
-                  <span>{bigCard.readTime} mins read</span>
+                  <span>{bigCard.readTime} min de lectura</span>
                 </div>
               </Link>
             )}
@@ -126,7 +126,7 @@ export default function CategoryPage({
                     <div className="relative h-[150px] rounded-xl overflow-hidden bg-gray-900">
                       <Image
                         src={card.image}
-                        alt={card.title}
+                        alt=""
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 1024px) 50vw, 20vw"

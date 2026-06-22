@@ -34,7 +34,7 @@ export default function HeroSection({ featured, sidebar }: HeroSectionProps) {
         <Link href={`/article/${featured.slug}`} className="relative h-[420px] rounded-2xl overflow-hidden group block">
           <Image
             src={featured.image}
-            alt={featured.title}
+            alt=""
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             priority

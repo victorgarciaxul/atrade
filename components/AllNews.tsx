@@ -45,7 +45,7 @@ export default function AllNews({ featured, articles }: AllNewsProps) {
         <Link href={`/article/${featured.slug}`} className="relative h-[400px] rounded-2xl overflow-hidden bg-gray-900 block group">
           <Image
             src={featured.image}
-            alt={featured.title}
+            alt=""
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -66,7 +66,7 @@ export default function AllNews({ featured, articles }: AllNewsProps) {
             <div className="flex items-center gap-2 text-xs text-grey">
               <span>{featured.category}</span>
               <span>|</span>
-              <span>{featured.readTime} mins read</span>
+              <span>{featured.readTime} min de lectura</span>
             </div>
             <Link
               href={`/article/${featured.slug}`}

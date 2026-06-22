@@ -88,7 +88,7 @@ export default async function ArticlePage({ params }: Props) {
             <span>|</span>
             <span>{article.date}</span>
             <span>|</span>
-            <span>{article.readTime} mins read</span>
+            <span>{article.readTime} min de lectura</span>
           </div>
 
           {/* Cuerpo del artículo */}
@@ -155,14 +155,14 @@ export default async function ArticlePage({ params }: Props) {
                   <div className="flex items-center gap-2 text-xs text-grey">
                     <span>{rel.category}</span>
                     <span>|</span>
-                    <span>{rel.readTime} mins read</span>
+                    <span>{rel.readTime} min de lectura</span>
                   </div>
                 </div>
                 {/* Miniatura */}
                 <div className="relative w-[90px] h-[70px] shrink-0 rounded-lg overflow-hidden bg-gray-100">
                   <Image
                     src={rel.image}
-                    alt={rel.title}
+                    alt=""
                     fill
                     className="object-cover"
                     sizes="90px"
