@@ -31,17 +31,15 @@ export default function BannerImpulsa() {
       </div>
 
       {/* ── MÓVIL (< sm) ──────────────────────────────────────── */}
-      <div className="relative w-full overflow-hidden sm:hidden" style={{ aspectRatio: "4 / 3" }}>
+      <div className="relative w-full overflow-hidden sm:hidden" style={{ aspectRatio: "16 / 9" }}>
         <Image
           src="/banner-fondo.png"
           alt=""
           fill
-          className="object-cover object-[60%_center]"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
-
-        <div className="absolute inset-0 bg-primary/40" />
 
         <div className="absolute left-6 top-[20%]">
           <p className="text-white/80 text-xs font-[500] uppercase tracking-widest mb-2">
