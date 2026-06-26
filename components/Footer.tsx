@@ -72,13 +72,16 @@ export default function Footer() {
         {/* Newsletter */}
         <div className="flex flex-col gap-2 w-full md:w-[320px]">
           <label className="text-sm text-white font-[400]">Suscríbete a nuestra newsletter</label>
-          <iframe
-            src="https://andaluciatrade.ipzmarketing.com/f/FJjOKiW8Mfg"
-            frameBorder={0}
-            scrolling="no"
-            width="100%"
-            className="ipz-iframe min-h-[48px]"
-          />
+          <div className="rounded-lg overflow-hidden">
+            <iframe
+              src="https://andaluciatrade.ipzmarketing.com/f/FJjOKiW8Mfg"
+              frameBorder={0}
+              scrolling="no"
+              width="100%"
+              height={220}
+              className="ipz-iframe block"
+            />
+          </div>
         </div>
       </div>
 
