@@ -337,8 +337,8 @@ ADM Sevilla refuerza su carácter de gran cita nacional de la industria aeroespa
   author: "Redacción",
   date: "Mayo 2026",
   readTime: 5,
-  image: "/ADM - Miercoles - 146.jpg",
-  gallery: ["/ADM - Miercoles - 146.jpg", "/ADM - Martes - 327.jpg"],
+  image: "/adm-fibes.jpg",
+  gallery: ["/adm-fibes.jpg"],
   videoUrl: "https://www.youtube.com/watch?v=K6QgSygkJWY",
   slug: "adm-sevilla-2026-cifras-record-aeroespacial-andalucia",
 };
