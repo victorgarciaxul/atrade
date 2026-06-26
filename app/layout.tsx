@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NewsletterBanner from "@/components/NewsletterBanner";
 import FloatingWidgets from "@/components/FloatingWidgets";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">{children}</main>
+        <NewsletterBanner />
         <Footer />
         <FloatingWidgets />
       </body>

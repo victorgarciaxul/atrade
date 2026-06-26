@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Script from "next/script";
 
 const footerLinks = [
   { label: "Quiénes somos", href: "/categories" },
@@ -47,7 +46,6 @@ const legalLinks = [
 
 export default function Footer() {
   return (
-    <>
     <footer className="bg-primary text-white">
       {/* Top bar */}
       <div className="max-w-[1512px] mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -66,21 +64,6 @@ export default function Footer() {
                 {icon.svg}
               </a>
             ))}
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="flex flex-col gap-2 w-full md:w-[320px]">
-          <label className="text-sm text-white font-[400]">Suscríbete a nuestra newsletter</label>
-          <div className="rounded-lg overflow-hidden">
-            <iframe
-              src="https://andaluciatrade.ipzmarketing.com/f/FJjOKiW8Mfg"
-              frameBorder={0}
-              scrolling="no"
-              width="100%"
-              height={220}
-              className="ipz-iframe block"
-            />
           </div>
         </div>
       </div>
@@ -139,11 +122,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-
-    <Script
-      src="https://assets.ipzmarketing.com/assets/signup_form/iframe_v1.js"
-      strategy="lazyOnload"
-    />
-    </>
   );
 }
