@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 
 const footerLinks = [
   { label: "Quiénes somos", href: "/categories" },
@@ -68,15 +69,15 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-full md:w-[320px]">
           <label className="text-sm text-white font-[400]">Suscríbete a nuestra newsletter</label>
-          <div className="flex items-center border border-white/40 rounded-lg overflow-hidden">
-            <input
-              type="email"
-              placeholder="Email"
-              className="bg-transparent text-sm text-white placeholder:text-white/60 px-4 py-2 focus:outline-none w-[240px]"
-            />
-          </div>
+          <iframe
+            src="https://andaluciatrade.ipzmarketing.com/f/FJjOKiW8Mfg"
+            frameBorder={0}
+            scrolling="no"
+            width="100%"
+            className="ipz-iframe min-h-[48px]"
+          />
         </div>
       </div>
 
@@ -134,5 +135,10 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+
+    <Script
+      src="https://assets.ipzmarketing.com/assets/signup_form/iframe_v1.js"
+      strategy="lazyOnload"
+    />
   );
 }
