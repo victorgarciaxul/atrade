@@ -265,7 +265,7 @@ La delegación internacional estuvo integrada por representantes de diferentes i
   author: "Redacción",
   date: "Junio 2026",
   readTime: 4,
-  image: "/ele-01.png",
+  image: "/EEUU-Canadá.jpeg",
   slug: "andalucia-trade-ele-eeuu-canada-ensenanza-espanol",
 };
 
@@ -299,7 +299,7 @@ La organización de esta acción por parte de Andalucía TRADE será cofinanciad
   author: "Redacción",
   date: "Junio 2026",
   readTime: 4,
-  image: "/peru-01.png",
+  image: "/Perú.png",
   slug: "andalucia-trade-mision-comercial-construccion-peru-lima",
 };
 
@@ -337,8 +337,8 @@ ADM Sevilla refuerza su carácter de gran cita nacional de la industria aeroespa
   author: "Redacción",
   date: "Mayo 2026",
   readTime: 5,
-  image: "/adm-01.png",
-  gallery: ["/adm-01.png", "/adm-02.png", "/adm-03.png", "/adm-04.png"],
+  image: "/ADM - Miercoles - 146.jpg",
+  gallery: ["/ADM - Miercoles - 146.jpg", "/ADM - Martes - 327.jpg"],
   videoUrl: "https://www.youtube.com/watch?v=K6QgSygkJWY",
   slug: "adm-sevilla-2026-cifras-record-aeroespacial-andalucia",
 };
