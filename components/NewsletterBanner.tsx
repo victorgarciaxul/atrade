@@ -12,15 +12,14 @@ export default function NewsletterBanner() {
           <p className="text-secondary text-[15px] leading-relaxed">
             Recibe las últimas noticias de Andalucía TRADE en tu correo.
           </p>
-          <div className="w-full mt-2 overflow-hidden" style={{ margin: "0 -16px" }}>
+          <div className="w-full mt-2">
             <iframe
               src="https://andaluciatrade.ipzmarketing.com/f/FJjOKiW8Mfg"
               frameBorder={0}
               scrolling="no"
-              width="calc(100% + 32px)"
+              width="100%"
               height={220}
               className="ipz-iframe block"
-              style={{ border: "none", marginTop: -16 }}
             />
           </div>
         </div>
