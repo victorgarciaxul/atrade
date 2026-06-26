@@ -47,6 +47,7 @@ const legalLinks = [
 
 export default function Footer() {
   return (
+    <>
     <footer className="bg-primary text-white">
       {/* Top bar */}
       <div className="max-w-[1512px] mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -140,5 +141,6 @@ export default function Footer() {
       src="https://assets.ipzmarketing.com/assets/signup_form/iframe_v1.js"
       strategy="lazyOnload"
     />
+    </>
   );
 }
