@@ -245,6 +245,64 @@ La empresa está inmersa en un plan de expansión, tanto de sus instalaciones co
   slug: "toneleria-del-sur-cooperage-year-montilla-cordoba",
 };
 
+// ─── ELE EEUU-CANADÁ ──────────────────────────────────────────────────────
+const eleeeuu: Article = {
+  id: 17,
+  title: "Andalucía TRADE impulsa la enseñanza del español en EE.UU. y Canadá, un ámbito que dejó 1.000 millones de euros en 2025 en la comunidad",
+  excerpt: "La agencia organiza 169 encuentros B2B para academias de Sevilla, Málaga, Córdoba y Cádiz con escuelas de secundaria, colleges y universidades de Norteamérica.",
+  body: `Andalucía TRADE ha organizado, del 8 al 11 de junio, un encuentro para el sector ELE (enseñanza del español) en el que han participado 16 escuelas andaluzas que han mantenido 169 encuentros de alto nivel con 13 instituciones educativas procedentes de Estados Unidos y Canadá.
+
+Esta acción forma parte de la estrategia de internacionalización de Andalucía TRADE hacia el sector de la enseñanza del español, un ámbito que genera un importante beneficio económico para Andalucía: según datos de la Asociación de Escuelas de Español para Extranjeros de Andalucía (AEE), cerca de 150.000 turistas llegan cada año a Andalucía para estudiar español, lo que se tradujo en 2025 en un impacto económico de 1.000 millones de euros.
+
+La cita se ha desarrollado en las provincias de Málaga, Córdoba, Sevilla y Cádiz, combinando reuniones profesionales con visitas a centros educativos para que los participantes pudieran conocer de primera mano la calidad de la oferta andaluza de enseñanza del español, así como los recursos culturales y turísticos asociados a la experiencia formativa en la comunidad.
+
+## Un mercado de ocho millones de estudiantes
+
+El objetivo de esta acción es contribuir a la internacionalización de la enseñanza del español en Estados Unidos y Canadá, mercados en los que, según datos del Instituto Cervantes, estudian el idioma más de ocho millones de alumnos. De este modo, Andalucía TRADE impulsa el sector de la enseñanza del español y refuerza la presencia del idioma en la oferta educativa de Norteamérica, con el propósito de fortalecer la internacionalización de las escuelas andaluzas y generar nuevas oportunidades de colaboración académica y comercial.
+
+La delegación internacional estuvo integrada por representantes de diferentes instituciones educativas (escuelas de secundaria, community colleges y universidades) procedentes de Chicago, Miami, Los Ángeles y Montreal. Entre las entidades visitantes figuran la University of Illinois at Chicago, Northwestern University, Florida Atlantic University, Florida Christian School, Westside Neighborhood School, así como varios centros de educación superior de Quebec, entre ellos Dawson College, Cégep de Shawinigan, Cégep de Drummondville y Cégep André-Laurendeau.`,
+  category: "Andalucía TRADE informa",
+  author: "Redacción",
+  date: "Junio 2026",
+  readTime: 4,
+  image: "/ele-01.png",
+  slug: "andalucia-trade-ele-eeuu-canada-ensenanza-espanol",
+};
+
+// ─── PERÚ ─────────────────────────────────────────────────────────────────
+const peru: Article = {
+  id: 18,
+  title: "Andalucía TRADE impulsa la internacionalización de la construcción en Perú con oportunidades en infraestructuras, vivienda y obra pública",
+  excerpt: "La agencia organiza una agenda comercial en Lima para empresas de Cádiz, Málaga y Sevilla, con el apoyo de su Antena de Promoción de Negocios en el país.",
+  body: `Andalucía TRADE ha organizado una misión comercial sobre el sector de la construcción del 16 al 18 de junio en Lima, Perú, en la que participan cuatro empresas andaluzas, con el objetivo de reforzar la presencia internacional del tejido empresarial de la comunidad en un mercado estratégico en crecimiento. La acción ha permitido la programación de 26 reuniones de negocio con entidades peruanas, consolidando un importante espacio de contacto con potenciales socios, clientes e importadores del país andino.
+
+Según informes de la agencia pública, el aumento sostenido de la inversión pública peruana en transporte e infraestructuras está impulsando la modernización del país, con especial atención a los proyectos de conectividad y desarrollo vial que concentran buena parte del esfuerzo inversor estatal. Este escenario abre nuevas oportunidades para empresas internacionales especializadas en tecnología, ingeniería, equipamiento y soluciones para infraestructuras.
+
+## Empresas participantes
+
+Esta acción se ha dirigido a empresas vinculadas a los sectores de ingeniería, materiales y maquinaria de construcción, consultoría y servicios. Las empresas participantes son:
+
+**Coimpul (Sevilla)**, especializada en construcciones industriales, estructuras metálicas e ingeniería en soluciones en acero.
+
+**Ferro Systems (Sevilla)**, dedicada a tuberías y accesorios de plástico.
+
+**Sanelec Logística-Aquore (Málaga)**, fabricante de aparatos sanitarios.
+
+**Transformados y Accesorios del Sur-TAS (Cádiz)**, firma especializada en revestimiento de fachadas, cerramientos metálicos de grandes edificios y sistemas de ventilación estática.
+
+## Objetivos de la misión
+
+La misión tiene como principales objetivos fomentar la presencia de productos y servicios andaluces en el mercado peruano, identificar nuevas oportunidades de negocio y facilitar el contacto con clientes finales, distribuidores y socios estratégicos. Asimismo, busca dar a conocer la capacidad técnica y la experiencia de las empresas andaluzas del sector de infraestructuras.
+
+La organización de esta acción por parte de Andalucía TRADE será cofinanciada con fondos procedentes de la Unión Europea, con cargo al Programa Operativo FEDER de Andalucía 2021-2027, dotado con una contribución comunitaria del 85%.`,
+  category: "Andalucía TRADE informa",
+  author: "Redacción",
+  date: "Junio 2026",
+  readTime: 4,
+  image: "/peru-01.png",
+  slug: "andalucia-trade-mision-comercial-construccion-peru-lima",
+};
+
 // ─── ADM ───────────────────────────────────────────────────────────────────
 const adm: Article = {
   id: 14,
@@ -306,5 +364,7 @@ export const allArticlesExtended: Article[] = [
   // En femenino
   aceitunastorrent,
   // Andalucía TRADE informa
+  eleeeuu,
+  peru,
   adm,
 ];
