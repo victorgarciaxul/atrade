@@ -3,7 +3,7 @@ export default function CategoriesPage() {
     <main className="max-w-[1512px] mx-auto px-6 py-12">
       <h1 className="font-brand text-primary text-3xl font-[600] mb-10">Quiénes somos</h1>
 
-      <div className="max-w-3xl flex flex-col gap-6 text-secondary text-[16px] leading-relaxed text-justify">
+      <div className="flex flex-col gap-6 text-secondary text-[16px] leading-relaxed text-justify">
         <p>
           <span className="font-brand text-primary font-[600]">Andalucía TRADE IMPULSA</span> es una publicación online de Andalucía TRADE para la difusión de las actuaciones desarrolladas en el ámbito del Programa de Andalucía FEDER 2021-2027, orientadas al impulso de la competitividad, la innovación y el crecimiento sostenible del tejido empresarial andaluz.
         </p>
