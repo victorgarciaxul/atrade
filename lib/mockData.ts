@@ -355,12 +355,9 @@ export const allArticlesExtended: Article[] = [
   featuredArticle,
   // Entrevista
   carolinaespana,
-  // Tu proyecto cuenta — Ariema primero, luego Tonelería, después el resto
+  // Tu proyecto cuenta — solo primer número
   ariema,
   toneleria,
-  samafrava,
-  antonioespana,
-  planho,
   // En femenino
   aceitunastorrent,
   // Andalucía TRADE informa
