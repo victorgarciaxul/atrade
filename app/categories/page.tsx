@@ -1,6 +1,9 @@
+import Breadcrumb from "@/components/Breadcrumb";
+
 export default function CategoriesPage() {
   return (
     <main className="max-w-[1512px] mx-auto px-6 py-12">
+      <Breadcrumb crumbs={[{ label: "Inicio", href: "/" }, { label: "Quiénes somos" }]} />
       <h1 className="font-brand text-primary text-3xl font-[600] mb-10">Quiénes somos</h1>
 
       <div className="flex flex-col gap-6 text-secondary text-[16px] leading-relaxed text-justify">

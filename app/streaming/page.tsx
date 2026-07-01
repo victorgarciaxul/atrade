@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { allArticlesExtended } from "@/lib/mockData";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function StreamingPage() {
   const all = allArticlesExtended.filter((a) => a.category === "Streaming");
@@ -8,6 +9,7 @@ export default function StreamingPage() {
   if (all.length === 0) {
     return (
       <main className="max-w-[1512px] mx-auto px-6 py-10">
+        <Breadcrumb crumbs={[{ label: "Inicio", href: "/" }, { label: "Streaming" }]} />
         <h1 className="font-brand text-primary text-2xl font-[500] mb-10">Streaming</h1>
         <p className="text-secondary">Próximamente.</p>
       </main>
@@ -16,6 +18,7 @@ export default function StreamingPage() {
 
   return (
     <main className="max-w-[1512px] mx-auto px-6 py-10">
+      <Breadcrumb crumbs={[{ label: "Inicio", href: "/" }, { label: "Streaming" }]} />
 
       {/* Cabecera */}
       <div className="mb-10">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Article } from "@/lib/types";
 
 interface CategoryPageProps {
@@ -28,6 +29,8 @@ export default function CategoryPage({
 }: CategoryPageProps) {
   return (
     <main className="max-w-[1512px] mx-auto px-6 py-10">
+
+      <Breadcrumb crumbs={[{ label: "Inicio", href: "/" }, { label: pageTitle }]} />
 
       {/* ── Sección 1: Cabecera + artículo destacado ─────────────── */}
       <div className="mb-10">

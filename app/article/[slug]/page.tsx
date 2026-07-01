@@ -2,7 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
+import Breadcrumb from "@/components/Breadcrumb";
 import { allArticlesExtended, latestArticles } from "@/lib/mockData";
+
+const categoryHref: Record<string, string> = {
+  "A fondo": "/a-fondo",
+  "En femenino": "/en-femenino",
+  "Tu proyecto cuenta": "/tu-proyecto-cuenta",
+  "Entrevista": "/entrevista",
+  "Andalucía TRADE informa": "/andalucia-trade-informa",
+  "Streaming": "/streaming",
+};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -35,16 +45,11 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <main className="max-w-[1512px] mx-auto px-6 py-8">
 
-      {/* Breadcrumb */}
-      <p className="text-grey text-xs mb-6 tracking-wide uppercase">
-        <Link href="/" className="hover:text-primary transition-colors">Inicio</Link>
-        <span className="mx-2">/</span>
-        <Link href={`/${article.category === "A fondo" ? "a-fondo" : article.category === "En femenino" ? "en-femenino" : article.category === "Tu proyecto cuenta" ? "tu-proyecto-cuenta" : article.category === "Entrevista" ? "entrevista" : "categories"}`} className="hover:text-primary transition-colors capitalize">
-          {article.category}
-        </Link>
-        <span className="mx-2">/</span>
-        <span className="line-clamp-1">{article.title}</span>
-      </p>
+      <Breadcrumb crumbs={[
+        { label: "Inicio", href: "/" },
+        { label: article.category, href: categoryHref[article.category] },
+        { label: article.title },
+      ]} />
 
       {/* ── Layout 2 columnas ───────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 mb-16">
