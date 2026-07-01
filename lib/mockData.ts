@@ -387,6 +387,8 @@ Entre las principales conclusiones destacaron la necesidad de adoptar una visió
 
 // ─── EXPORTS ───────────────────────────────────────────────────────────────
 
+export { carolinaespana, ariema, toneleria, aceitunastorrent, adm, eleeeuu, peru };
+
 export const sidebarArticles: Article[] = [ariema, aceitunastorrent];
 
 export const latestArticles: Article[] = [samafrava, antonioespana];
