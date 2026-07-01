@@ -25,6 +25,9 @@ export default function BannerImpulsa() {
             <h1 style={{ fontFamily: "TTFirsNeue, sans-serif" }} className="text-white font-[600] text-[90px] lg:text-[120px] leading-none">
               IMPULSA
             </h1>
+            <p style={{ fontFamily: "TTFirsNeue, sans-serif" }} className="text-white font-[400] text-[20px] lg:text-[26px] leading-tight mt-3 tracking-wide">
+              Proyectos andaluces cofinanciados por Europa
+            </p>
           </div>
         </div>
       </div>
@@ -47,6 +50,9 @@ export default function BannerImpulsa() {
           <h1 style={{ fontFamily: "TTFirsNeue, sans-serif" }} className="text-white font-[600] text-[64px] leading-none">
             IMPULSA
           </h1>
+          <p style={{ fontFamily: "TTFirsNeue, sans-serif" }} className="text-white font-[400] text-[13px] leading-tight mt-1">
+            Proyectos andaluces cofinanciados por Europa
+          </p>
         </div>
       </div>
     </>
