@@ -3,10 +3,16 @@ import Link from "next/link";
 import { allArticlesExtended } from "@/lib/mockData";
 
 export default function StreamingPage() {
-  // Artículos con vídeo primero, luego el resto
-  const withVideo = allArticlesExtended.filter((a) => a.videoUrl);
-  const withoutVideo = allArticlesExtended.filter((a) => !a.videoUrl);
-  const all = [...withVideo, ...withoutVideo];
+  const all = allArticlesExtended.filter((a) => a.category === "Streaming");
+
+  if (all.length === 0) {
+    return (
+      <main className="max-w-[1512px] mx-auto px-6 py-10">
+        <h1 className="font-brand text-primary text-2xl font-[500] mb-10">Streaming</h1>
+        <p className="text-secondary">Próximamente.</p>
+      </main>
+    );
+  }
 
   return (
     <main className="max-w-[1512px] mx-auto px-6 py-10">

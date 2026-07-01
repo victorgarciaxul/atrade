@@ -343,6 +343,48 @@ ADM Sevilla refuerza su carácter de gran cita nacional de la industria aeroespa
   slug: "adm-sevilla-2026-cifras-record-aeroespacial-andalucia",
 };
 
+// ─── STREAMING ────────────────────────────────────────────────────────────
+const retoInnovacion: Article = {
+  id: 19,
+  title: "Innovación con visión europea",
+  excerpt: "Andalucía TRADE acerca a las pymes andaluzas las claves para innovar y competir en Europa. Un total de 188 personas se inscribieron en el primero de los cinco Retos Andalucía TRADE, una serie de webinarios que la agencia desarrolla en LinkedIn para acercar a las empresas sus servicios.",
+  body: `Andalucía TRADE ha celebrado el primer encuentro de su ciclo de webinars «Retos Andalucía TRADE», una iniciativa concebida para ofrecer a empresas, emprendedores y profesionales información práctica y especializada sobre los principales desafíos y oportunidades para el crecimiento empresarial, utilizando LinkedIn como herramienta profesional de conexión y vínculo con las empresas.
+
+Bajo el título «Innovación con visión europea», la sesión ha reunido a expertos en financiación, programas europeos de investigación e innovación y propiedad industrial para abordar cómo las pequeñas y medianas empresas andaluzas pueden aprovechar los recursos y oportunidades que ofrece la Unión Europea para impulsar su competitividad.
+
+Durante la apertura del encuentro, se destacó la importancia de la innovación como factor clave para el crecimiento empresarial y la necesidad de que las compañías conozcan las herramientas de apoyo existentes para acceder a nuevos mercados, desarrollar proyectos innovadores y fortalecer su posicionamiento internacional.
+
+Esta iniciativa se desarrolla en el marco de las actuaciones de apoyo a la innovación y la competitividad empresarial impulsadas por Andalucía TRADE, y cuenta con la cofinanciación del Fondo Europeo de Desarrollo Regional (FEDER) a través del Programa Andalucía FEDER 2021-2027.
+
+## Europa, más cerca de las empresas andaluzas
+
+Uno de los primeros temas abordados fue el papel de la Enterprise Europe Network (EEN), la mayor red internacional de apoyo a las pymes innovadoras que cuenta con un nodo propio en Andalucía liderado por Andalucía TRADE, del que también forman parte el Consejo Andaluz de Cámaras y la Confederación de Empresarios de Andalucía (CEA). Los participantes pudieron conocer cómo la Red facilita a las pymes el acceso a servicios de asesoramiento especializado, búsqueda de socios internacionales, apoyo a la innovación, participación en proyectos europeos y orientación en materia de propiedad intelectual.
+
+Asimismo, se puso de relieve el papel que desempeña el nodo andaluz como punto de conexión entre las empresas andaluzas y las oportunidades disponibles en el ámbito europeo.
+
+## Financiación europea: de la oportunidad a la participación
+
+El webinar dedicó un bloque específico a analizar las principales vías de financiación europeas para proyectos de investigación, desarrollo e innovación, especialmente dentro del Programa Marco Horizonte Europa (HE). Los asistentes pudieron conocer cuáles son los programas más relevantes para las empresas dentro de HE, cómo identificar las convocatorias más adecuadas según el grado de madurez de las innovaciones en cada organización y qué aspectos deben tenerse en cuenta para iniciar el camino hacia la financiación europea.
+
+## Cómo construir una propuesta competitiva para Horizonte Europa
+
+Durante la sesión, los ponentes profundizaron en las claves para diseñar proyectos capaces de competir en las convocatorias más exigentes de Horizonte Europa. En este sentido, destacaron la importancia de la planificación, la alineación con las prioridades europeas, la generación de impacto social y la construcción de alianzas internacionales sólidas.
+
+## Proteger la innovación para convertirla en ventaja competitiva
+
+La última parte del encuentro estuvo centrada en la vigilancia tecnológica y la protección de los resultados de la innovación. Durante este bloque, se puso de manifiesto la importancia de incorporar la propiedad industrial e intelectual desde las primeras fases de cualquier proyecto innovador, especialmente cuando se desarrolla en colaboración con socios internacionales.
+
+La sesión concluyó con un espacio de debate en el que los expertos respondieron a preguntas de los asistentes y compartieron recomendaciones prácticas para aquellas empresas que desean iniciar su camino hacia la innovación europea.
+
+Entre las principales conclusiones destacaron la necesidad de adoptar una visión estratégica de la innovación, buscar apoyo especializado desde las fases iniciales de los proyectos y aprovechar las redes y herramientas existentes para acceder a financiación, conocimiento y colaboración internacional.`,
+  category: "Streaming",
+  author: "Redacción",
+  date: "Junio 2026",
+  readTime: 5,
+  image: "https://picsum.photos/seed/reto-innovacion/800/500",
+  slug: "reto-andalucia-trade-innovacion-vision-europea",
+};
+
 // ─── EXPORTS ───────────────────────────────────────────────────────────────
 
 export const sidebarArticles: Article[] = [ariema, aceitunastorrent];
@@ -360,8 +402,11 @@ export const allArticlesExtended: Article[] = [
   toneleria,
   // En femenino
   aceitunastorrent,
+  // En femenino (ya incluido arriba)
   // Andalucía TRADE informa
   eleeeuu,
   peru,
   adm,
+  // Streaming
+  retoInnovacion,
 ];
