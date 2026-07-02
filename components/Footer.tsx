@@ -39,7 +39,7 @@ const socialIcons = [
 ];
 
 const legalLinks = [
-  { label: "Aviso Legal", href: "https://www.andaluciatrade.es/aviso-legal/" },
+  { label: "Aviso Legal", href: "/aviso-legal" },
   { label: "Tratamiento de datos personales", href: "https://www.andaluciatrade.es/tratamiento-datos-personales/" },
   { label: "Accesibilidad", href: "https://www.andaluciatrade.es/accesibilidad/" },
 ];
