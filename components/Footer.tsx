@@ -103,6 +103,14 @@ export default function Footer() {
               width={260}
               height={32}
             />
+            <div className="w-px h-8 bg-white/20" />
+            <Image
+              src="/logo.svg"
+              alt="Andalucía TRADE — Junta de Andalucía"
+              width={220}
+              height={36}
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
           </div>
 
           {/* Legal links */}
