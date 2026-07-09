@@ -18,7 +18,7 @@ export default function NewsletterBanner() {
               frameBorder={0}
               scrolling="no"
               width="100%"
-              height={220}
+              height={420}
               className="ipz-iframe block"
             />
           </div>
