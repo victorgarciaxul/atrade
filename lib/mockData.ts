@@ -382,6 +382,7 @@ Entre las principales conclusiones destacaron la necesidad de adoptar una visió
   date: "Junio 2026",
   readTime: 5,
   image: "https://picsum.photos/seed/reto-innovacion/800/500",
+  videoUrl: "https://www.youtube.com/watch?v=yaMVIpQtiCc",
   slug: "reto-andalucia-trade-innovacion-vision-europea",
 };
 
