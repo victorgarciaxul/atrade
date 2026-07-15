@@ -25,8 +25,8 @@ export default function Navbar() {
           <Image
             src="/logo.svg"
             alt="Andalucía TRADE — Junta de Andalucía"
-            width={280}
-            height={46}
+            width={260}
+            height={47}
             priority
           />
         </Link>
