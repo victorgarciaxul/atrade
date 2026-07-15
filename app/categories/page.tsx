@@ -6,7 +6,7 @@ export default function CategoriesPage() {
       <Breadcrumb crumbs={[{ label: "Inicio", href: "/" }, { label: "Quiénes somos" }]} />
       <h1 className="font-brand text-primary text-3xl font-[600] mb-10">Quiénes somos</h1>
 
-      <div className="max-w-[860px] flex flex-col gap-8 text-secondary text-[16px] leading-relaxed text-justify">
+      <div className="max-w-[860px] mx-auto flex flex-col gap-8 text-secondary text-[16px] leading-relaxed text-justify">
 
         {/* Bloque 1: Qué es IMPULSA */}
         <div className="flex flex-col gap-4">
