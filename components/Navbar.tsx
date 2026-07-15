@@ -20,20 +20,11 @@ export default function Navbar() {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-[1512px] mx-auto px-6 h-[68px] flex items-center justify-between gap-8">
-        {/* Logos: TRADE + Junta de Andalucía */}
-        <Link href="/" className="shrink-0 flex items-center gap-4">
-          <Image
-            src="/logo-trade.svg"
-            alt="Andalucía TRADE"
-            width={200}
-            height={33}
-            priority
-          />
-          <div className="w-px h-8 bg-gray-200" />
+        <Link href="/" className="shrink-0">
           <Image
             src="/logo.svg"
-            alt="Junta de Andalucía"
-            width={120}
+            alt="Andalucía TRADE — Junta de Andalucía"
+            width={380}
             height={43}
             priority
           />
