@@ -3,30 +3,36 @@ import { Article } from "./types";
 // ─── FEATURED ──────────────────────────────────────────────────────────────
 export const featuredArticle: Article = {
   id: 1,
-  title: "Andalucía TRADE activa más de 415 millones de euros para impulsar la inversión y competitividad empresarial",
-  excerpt: "La agencia pone a disposición de las empresas andaluzas un sistema financiero integral que combina incentivos directos, financiación reembolsable y servicios especializados cofinanciados con Fondos FEDER.",
-  body: `Andalucía TRADE pone a disposición de las empresas andaluzas un sistema financiero integral diseñado para impulsar la inversión, el crecimiento y la competitividad del tejido empresarial. Un modelo que combina incentivos directos, financiación reembolsable y servicios por valor de 415 millones de euros, enfocado a facilitar el acceso de las empresas a los recursos que necesitan.
+  title: "Más de 500 millones de euros para impulsar la financiación empresarial andaluza",
+  excerpt: "Andalucía TRADE ha desplegado un sistema integral de financiación empresarial que moviliza 540 millones de euros mediante una combinación de incentivos directos y financiación reembolsable diseñado para acompañar a las empresas andaluzas en sus procesos de crecimiento, innovación e internacionalización.",
+  body: `Andalucía TRADE ha desplegado un sistema integral de financiación empresarial que moviliza 540 millones de euros mediante una combinación de incentivos directos y financiación reembolsable diseñado para acompañar a las empresas andaluzas en sus procesos de crecimiento, innovación e internacionalización. Este modelo híbrido, pionero en la comunidad autónoma, integra fondos propios, financiación europea FEDER y colaboración privada, favoreciendo además el desarrollo del mercado andaluz de financiación alternativa y capital riesgo.
 
-Actualmente, el sistema cuenta con cuatro líneas de incentivos abiertas, cofinanciadas con fondos europeos FEDER, con una dotación conjunta de 255,5 millones de euros. Un respaldo que ya ha despertado una alta respuesta del tejido empresarial andaluz: más de 1.770 solicitudes presentadas con una inversión total asociada de 1.146 millones de euros y 448 proyectos aprobados.
+La respuesta del tejido productivo andaluz pone de manifiesto el interés y la utilidad de estos instrumentos de apoyo. Desde la puesta en marcha de las actuales líneas de incentivos, Andalucía TRADE ha registrado 2.703 solicitudes, vinculadas a proyectos empresariales que movilizan 1.532 millones de euros de inversión. Además, hasta la fecha se han aprobado 749 proyectos empresariales, que representan 391 millones de euros de inversión movilizada y 170 millones de euros en incentivos concedidos.
 
-## Líneas de incentivos disponibles
+La oferta de apoyo empresarial continuará ampliándose con una convocatoria competitiva de ayudas a la I+D+i dotada con 70 millones de euros y una no competitiva, que permitirán completar la oferta pública de financiación a la innovación empresarial más ambiciosa desarrollada hasta la fecha en Andalucía.
 
-Los incentivos al Desarrollo Industrial apoyan la creación de nuevos establecimientos, la ampliación de capacidad productiva, la diversificación y la transformación de procesos productivos, con una intensidad de hasta el 75% sobre la inversión subvencionable.
+## Capital riesgo y nuevos instrumentos financieros
 
-Los incentivos a la I+D+i respaldan proyectos de investigación industrial y desarrollo experimental alineados con la Estrategia de Especialización Inteligente S4 Andalucía, con una intensidad de hasta el 50%. Los incentivos al Comercio Exterior facilitan la presencia de las empresas andaluzas en ferias, misiones comerciales y viajes de prospección, sufragando entre el 65% y el 100% de los gastos.
+El apoyo financiero de Andalucía TRADE incorpora también un importante componente de financiación reembolsable. Entre los instrumentos más relevantes destacan los nuevos fondos de capital riesgo para el fomento de la competitividad empresarial, que contarán con una dotación pública de 58,8 millones de euros, un 62% más que en el marco anterior.
 
-## Un modelo que genera confianza
+La línea de expansión, dotada con 49 millones de euros, ya ha sido adjudicada a las gestoras Alter Capital Desarrollo y Quadriga Asset Managers, mientras continúa la tramitación de la línea Startup. Estos fondos tienen como objetivo facilitar la financiación de empresas innovadoras en fases tempranas o de expansión, favoreciendo su crecimiento y acceso a nuevos mercados.
 
-El incentivo medio por proyecto casi cuadruplica al del programa anterior de 2017: 251.113 euros frente a 71.082 euros, con una intensidad media 9,5 puntos porcentuales superior. Casi el 50% del presupuesto hasta 2027 ya ha sido comprometido, lo que refleja la alta confianza del tejido empresarial.
+Junto a ellos, Andalucía TRADE trabaja en el desarrollo del Fondo FAST para Tecnología Estratégica en Andalucía, dotado con 30 millones de euros de fondos propios, destinado a impulsar proyectos vinculados a tecnologías digitales avanzadas, innovación tecnológica profunda, tecnologías limpias y biotecnología. Este instrumento, dado el origen de los fondos, permitirá ampliar el apoyo financiero a proyectos empresariales de alto contenido tecnológico, incluyendo por primera vez actuaciones dirigidas específicamente a empresas no pyme.
 
-El sistema se completa con instrumentos de financiación reembolsable: fondos de capital riesgo cofinanciados por la UE orientados a startups y empresas en expansión (58,8 M€) y el Fondo para Tecnología Estratégica en Andalucía (30 M€), que puede invertir en empresas de cualquier tamaño.`,
+## Más financiación para diversificar las fuentes de inversión
+
+El sistema se completará con nuevas medidas para facilitar el acceso de las empresas a mercados de financiación alternativa, incluyendo ayudas para cubrir gastos de diagnóstico, preparación y acompañamiento en los procesos de incorporación a estos mercados.
+
+Asimismo, Andalucía TRADE pondrá en marcha una línea de incentivos para financiar las comisiones de avales y los gastos financieros asociados a préstamos garantizados por sociedades de garantía recíproca (SGR), dotada con 16,5 millones de euros, con la previsión de movilizar hasta 90 millones de euros de inversión inducida.
+
+Con este sistema híbrido de financiación, Andalucía TRADE refuerza su papel como ventanilla única para el crecimiento empresarial, ofreciendo a las empresas andaluzas una combinación de ayudas, financiación e instrumentos especializados para afrontar con mayores garantías sus proyectos de inversión, innovación e internacionalización.`,
   category: "A fondo",
   author: "Redacción",
   date: "Mayo 2026",
   readTime: 5,
   image: "https://picsum.photos/seed/atrade-afondo/800/500",
   videoUrl: "https://youtu.be/CLBQ8P7eV9E",
-  slug: "sistema-financiacion-empresarial-andalucia-trade",
+  slug: "financiacion-empresarial-andalucia-trade-500-millones",
 };
 
 // ─── ARTÍCULOS PUBLICADOS ──────────────────────────────────────────────────
