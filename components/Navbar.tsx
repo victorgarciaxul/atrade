@@ -20,31 +20,15 @@ export default function Navbar() {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-[1512px] mx-auto px-6 h-[68px] flex items-center justify-between gap-8">
-        <Link href="/" className="shrink-0 flex items-center gap-6">
+        <Link href="/" className="shrink-0">
           <Image
-            src="/logo-trade-full.svg"
-            alt="Andalucía TRADE"
-            width={150}
-            height={53}
+            src="/header-logos.webp"
+            alt="Andalucía TRADE — Junta de Andalucía, Consejería de Universidad, Industria, Energía e Innovación"
+            width={1702}
+            height={261}
+            className="h-12 w-auto"
             priority
           />
-          <div className="flex items-center gap-2.5">
-            <Image
-              src="/junta-icon.svg"
-              alt=""
-              width={40}
-              height={37}
-              priority
-            />
-            <div className="flex flex-col justify-center leading-tight">
-              <span className="text-[17px] font-bold text-gray-900">Junta de Andalucía</span>
-              <span className="text-[10px] leading-[1.2] text-gray-900">
-                Consejería de Universidad,
-                <br />
-                Industria, Energía e Innovación
-              </span>
-            </div>
-          </div>
         </Link>
 
         {/* Desktop nav */}
