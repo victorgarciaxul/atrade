@@ -28,17 +28,17 @@ export default function Navbar() {
             height={53}
             priority
           />
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5">
             <Image
               src="/junta-icon.svg"
               alt=""
-              width={30}
-              height={28}
+              width={40}
+              height={37}
               priority
             />
             <div className="flex flex-col justify-center leading-tight">
-              <span className="text-[14px] font-bold text-gray-900">Junta de Andalucía</span>
-              <span className="text-[9px] leading-[1.15] text-gray-900">
+              <span className="text-[17px] font-bold text-gray-900">Junta de Andalucía</span>
+              <span className="text-[10px] leading-[1.2] text-gray-900">
                 Consejería de Universidad,
                 <br />
                 Industria, Energía e Innovación
