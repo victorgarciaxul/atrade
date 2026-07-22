@@ -104,12 +104,15 @@ export default function Footer() {
               height={32}
             />
             <div className="w-px h-8 bg-white/20" />
-            <Image
-              src="/logo-junta-bl.svg"
-              alt="Andalucía TRADE — Junta de Andalucía"
-              width={340}
-              height={38}
-            />
+            <div className="flex items-center gap-2">
+              <Image
+                src="/junta-icon-white.svg"
+                alt=""
+                width={22}
+                height={20}
+              />
+              <span className="text-white text-sm font-semibold whitespace-nowrap">Junta de Andalucía</span>
+            </div>
           </div>
 
           {/* Legal links */}
