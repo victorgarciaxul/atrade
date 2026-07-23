@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import { allArticlesExtended, latestArticles } from "@/lib/mockData";
+import { getPostBySlug, getPosts } from "@/lib/wordpress";
+import { Article } from "@/lib/types";
 
 const categoryHref: Record<string, string> = {
   "A fondo": "/a-fondo",
@@ -21,24 +23,46 @@ interface Props {
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
 
-  /* ── Busca el artículo por slug ──────────────────────────────── */
-  const article = allArticlesExtended.find((a) => a.slug === slug);
+  /* ── Busca el artículo: primero en WordPress, si no responde o no existe cae al mock ── */
+  const wpArticle = await getPostBySlug(slug);
+  const article: Article | undefined = wpArticle ?? allArticlesExtended.find((a) => a.slug === slug);
   if (!article) notFound();
 
-  const relatedArticles = allArticlesExtended
-    .filter((a) => a.id !== article.id && a.category === article.category)
-    .slice(0, 4);
+  let sidebarItems: Article[];
+  let latest: Article[];
 
-  // Si no hay suficientes del mismo tema, rellena con recientes
-  const sidebarItems =
-    relatedArticles.length >= 4
-      ? relatedArticles
-      : [
-          ...relatedArticles,
-          ...allArticlesExtended
-            .filter((a) => a.id !== article.id && !relatedArticles.includes(a))
-            .slice(0, 4 - relatedArticles.length),
-        ];
+  if (wpArticle) {
+    const pool = (await getPosts({ perPage: 12 })) ?? [];
+    const related = pool
+      .filter((a) => a.slug !== wpArticle.slug && a.category === wpArticle.category)
+      .slice(0, 4);
+    sidebarItems =
+      related.length >= 4
+        ? related
+        : [
+            ...related,
+            ...pool
+              .filter((a) => a.slug !== wpArticle.slug && !related.some((r) => r.slug === a.slug))
+              .slice(0, 4 - related.length),
+          ];
+    latest = pool.length > 0 ? pool.slice(0, 4) : latestArticles;
+  } else {
+    const relatedArticles = allArticlesExtended
+      .filter((a) => a.id !== article.id && a.category === article.category)
+      .slice(0, 4);
+
+    // Si no hay suficientes del mismo tema, rellena con recientes
+    sidebarItems =
+      relatedArticles.length >= 4
+        ? relatedArticles
+        : [
+            ...relatedArticles,
+            ...allArticlesExtended
+              .filter((a) => a.id !== article.id && !relatedArticles.includes(a))
+              .slice(0, 4 - relatedArticles.length),
+          ];
+    latest = latestArticles;
+  }
 
   const bodyBlocks = article.body?.split("\n\n") ?? [];
 
@@ -195,7 +219,7 @@ export default async function ArticlePage({ params }: Props) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {latestArticles.map((a) => (
+          {latest.map((a) => (
             <Link key={a.id} href={`/article/${a.slug}`}>
               <ArticleCard article={a} />
             </Link>

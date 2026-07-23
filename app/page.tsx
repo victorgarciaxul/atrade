@@ -3,6 +3,7 @@ import Image from "next/image";
 import BannerImpulsa from "@/components/BannerImpulsa";
 import HeroSection from "@/components/HeroSection";
 import ArticleCard from "@/components/ArticleCard";
+import { getPosts } from "@/lib/wordpress";
 import {
   carolinaespana,
   featuredArticle,
@@ -14,6 +15,12 @@ import {
   peru,
 } from "@/lib/mockData";
 import { Article } from "@/lib/types";
+
+/** Pide posts de WordPress por categoría; si la API falla o no hay resultados, usa el fallback de mockData. */
+async function postsOrFallback(categorySlug: string, perPage: number, fallback: Article[]): Promise<Article[]> {
+  const posts = await getPosts({ categorySlug, perPage });
+  return posts && posts.length > 0 ? posts : fallback;
+}
 
 function getYTThumb(videoUrl?: string): string | null {
   if (!videoUrl) return null;
@@ -80,42 +87,50 @@ function CategorySection({ title, articles, href }: { title: string; articles: A
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const [entrevista, tuProyectoCuenta, aFondo, tradeInforma, enFemenino] = await Promise.all([
+    postsOrFallback("entrevista", 1, [carolinaespana]),
+    postsOrFallback("tu-proyecto-cuenta", 2, [ariema, toneleria]),
+    postsOrFallback("a-fondo", 1, [featuredArticle]),
+    postsOrFallback("andalucia-trade-informa", 3, [adm, eleeeuu, peru]),
+    postsOrFallback("en-femenino", 1, [aceitunastorrent]),
+  ]);
+
   return (
     <>
       <BannerImpulsa />
 
       {/* Hero: Entrevista featured, Tu proyecto cuenta en sidebar */}
       <HeroSection
-        featured={carolinaespana}
-        sidebar={[ariema, toneleria]}
+        featured={entrevista[0]}
+        sidebar={tuProyectoCuenta}
       />
 
       {/* A fondo */}
       <CategorySection
         title="A fondo"
-        articles={[featuredArticle]}
+        articles={aFondo}
         href="/a-fondo"
       />
 
       {/* Tu proyecto cuenta */}
       <CategorySection
         title="Tu proyecto cuenta"
-        articles={[ariema, toneleria]}
+        articles={tuProyectoCuenta}
         href="/tu-proyecto-cuenta"
       />
 
       {/* Andalucía TRADE informa */}
       <CategorySection
         title="Andalucía TRADE informa"
-        articles={[adm, eleeeuu, peru]}
+        articles={tradeInforma}
         href="/andalucia-trade-informa"
       />
 
       {/* En femenino */}
       <CategorySection
         title="En femenino"
-        articles={[aceitunastorrent]}
+        articles={enFemenino}
         href="/en-femenino"
       />
     </>
