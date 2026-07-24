@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
-import { allArticlesExtended, latestArticles } from "@/lib/mockData";
+import { allArticlesExtended } from "@/lib/mockData";
 import { getPostBySlug, getPosts } from "@/lib/wordpress";
 import { Article } from "@/lib/types";
 
@@ -45,7 +45,8 @@ export default async function ArticlePage({ params }: Props) {
               .filter((a) => a.slug !== wpArticle.slug && !related.some((r) => r.slug === a.slug))
               .slice(0, 4 - related.length),
           ];
-    latest = pool.length > 0 ? pool.slice(0, 4) : latestArticles;
+    const usedSlugs = new Set([wpArticle.slug, ...sidebarItems.map((a) => a.slug)]);
+    latest = pool.filter((a) => !usedSlugs.has(a.slug)).slice(0, 4);
   } else {
     const relatedArticles = allArticlesExtended
       .filter((a) => a.id !== article.id && a.category === article.category)
@@ -61,7 +62,10 @@ export default async function ArticlePage({ params }: Props) {
               .filter((a) => a.id !== article.id && !relatedArticles.includes(a))
               .slice(0, 4 - relatedArticles.length),
           ];
-    latest = latestArticles;
+
+    // "Más artículos": solo contenido real (allArticlesExtended), excluyendo el actual y ya mostrados en la sidebar
+    const usedIds = new Set([article.id, ...sidebarItems.map((a) => a.id)]);
+    latest = allArticlesExtended.filter((a) => !usedIds.has(a.id)).slice(0, 4);
   }
 
   const bodyBlocks = article.body?.split("\n\n") ?? [];
@@ -207,11 +211,11 @@ export default async function ArticlePage({ params }: Props) {
 
       </div>
 
-      {/* ── Últimas noticias ──────────────────────────────────────── */}
+      {/* ── Más artículos ──────────────────────────────────────────── */}
       <div className="border-t border-gray-100 pt-12">
         <div className="flex items-center justify-between mb-8">
           <h2 className="font-brand text-primary text-2xl font-[500]">
-            Últimas noticias
+            Más artículos
           </h2>
           <button className="bg-green text-white text-sm px-5 py-2 rounded-full hover:bg-green/90 active:scale-95 transition-all duration-200">
             Ver más

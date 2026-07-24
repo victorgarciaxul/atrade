@@ -28,7 +28,7 @@ Asimismo, Andalucía TRADE pondrá en marcha una línea de incentivos para finan
 Con este sistema híbrido de financiación, Andalucía TRADE refuerza su papel como ventanilla única para el crecimiento empresarial, ofreciendo a las empresas andaluzas una combinación de ayudas, financiación e instrumentos especializados para afrontar con mayores garantías sus proyectos de inversión, innovación e internacionalización.`,
   category: "A fondo",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 5,
   image: "https://picsum.photos/seed/atrade-afondo/800/500",
   videoUrl: "https://youtu.be/CLBQ8P7eV9E",
@@ -61,7 +61,7 @@ A diferencia de otros operadores del sector, Ariema centra su estrategia en inst
 Junto a su actividad industrial, Ariema mantiene una fuerte presencia internacional en consultoría y formación, con proyectos en Europa, Latinoamérica y el norte de África.`,
   category: "Tu proyecto cuenta",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 5,
   image: "/ariema-01.png",
   gallery: ["/ariema-02.png", "/ariema-03.png", "/ariema-04.png"],
@@ -94,7 +94,7 @@ En palabras de Blanca Torrent: "Para generaciones como la mía, que ya empezamos
 Ese liderazgo se traslada también a la filosofía interna de la compañía, donde el componente humano ocupa un lugar prioritario. Varias generaciones de las mismas familias han trabajado y continúan trabajando en la empresa: "Todas las familias que han trabajado en esta empresa son lo importante. No lo es la facturación, no es el margen de beneficio. Son las familias que han podido, con este trabajo, hacer sus sueños realidad."`,
   category: "En femenino",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 5,
   image: "/torrent-01.jpg",
   gallery: ["/torrent-02.jpg", "/torrent-03.jpg", "/torrent-04.jpg", "/torrent-05.jpg"],
@@ -123,7 +123,7 @@ Esta inversión es, en palabras del director general, "un plus, una bombona de o
 El salto a nuevos mercados internacionales europeos también está presente en la hoja de ruta de Samafrava. La empresa cordobesa ya está presente en países como Italia, Suiza, Francia, Portugal y Reino Unido, reforzando así su crecimiento fuera de España.`,
   category: "Tu proyecto cuenta",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 4,
   image: "/samafrava-01.jpg",
   gallery: ["/samafrava-02.jpg", "/samafrava-03.jpg"],
@@ -154,7 +154,7 @@ Antonio España ha participado, además, en numerosas acciones organizadas por l
 Aunque su corazón late en Huelva, el alcance de Antonio España es internacional. Actualmente, la empresa trabaja estrechamente con fundiciones de Alemania, Francia e Italia, mercados que ya representan entre el 5% y el 7% de su facturación. Hoy, la tercera generación de la familia se sitúa al frente de esta expansión, garantizando un fuerte compromiso con el medioambiente, el desarrollo de su entorno y la generación de empleo de calidad.`,
   category: "Tu proyecto cuenta",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 4,
   image: "/antonio-espana-01.png",
   gallery: ["/antonio-espana-02.png", "/antonio-espana-03.png", "/antonio-espana-04.png"],
@@ -185,7 +185,7 @@ Su expansión comenzó en Perú, donde la empresa estableció hace más de una d
 Junto a la innovación y a la especialización, la sostenibilidad se ha convertido en otro de los pilares fundamentales de Planho Consultores. La compañía apuesta por un modelo de arquitectura hospitalaria que combine eficiencia energética, optimización de recursos y bienestar del paciente, integrando soluciones que reduzcan el impacto ambiental y mejoren la experiencia asistencial.`,
   category: "Tu proyecto cuenta",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 5,
   image: "/planho-01.jpg",
   gallery: ["/planho-02.jpg", "/planho-03.jpg", "/planho-04.jpg"],
@@ -193,57 +193,77 @@ Junto a la innovación y a la especialización, la sostenibilidad se ha converti
   slug: "planho-consultores-internacionalizacion-trade",
 };
 
-// ─── ENTREVISTA: CAROLINA ESPAÑA ──────────────────────────────────────────
-const carolinaespana: Article = {
+// ─── ENTREVISTA: ANTONIO CASTRO ────────────────────────────────────────────
+const antoniocastro: Article = {
   id: 16,
-  title: "Carolina España Reina: \"Andalucía TRADE es el motor que conecta el talento andaluz con el mundo\"",
-  excerpt: "La consejera de Economía, Hacienda, Fondos Europeos y Diálogo Social y presidenta de Andalucía TRADE reflexiona sobre los retos de la internacionalización empresarial y el papel estratégico de la agencia.",
-  body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  title: "Andalucía TRADE, un acompañamiento integral para impulsar la competitividad empresarial andaluza",
+  excerpt: "Antonio Castro, director general de Andalucía TRADE, repasa la evolución de la Agencia desde su creación, el alcance de su oferta de financiación, los servicios que presta a las empresas y el nacimiento de 'Andalucía TRADE Impulsa'.",
+  body: `Desde su puesta en marcha en 2023, Andalucía TRADE ha asumido el reto de transformar la relación entre la Administración y el tejido empresarial andaluz. Dos años después, su director general, Antonio Castro, defiende que ese cambio ya es una realidad gracias a un modelo que concentra en un único organismo todos los servicios que una empresa puede necesitar a lo largo de su crecimiento.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Una ventanilla única para acompañar a las empresas
 
-## Una visión estratégica para Andalucía
+Antonio Castro sitúa el origen de Andalucía TRADE en una demanda histórica del tejido empresarial andaluz: disponer de un interlocutor único con la Administración que simplifique el acceso a los distintos recursos públicos.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+"Andalucía TRADE es la respuesta del Gobierno andaluz a una demanda de largo tiempo del empresariado: la existencia de un modelo nuevo de relación de la Administración con la empresa andaluza", afirma.
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+Ese nuevo modelo se articula a través de una ventanilla única que integra todos los servicios relacionados con el desarrollo empresarial. Desde el acceso a financiación hasta la internacionalización, la innovación o la atracción de inversiones, la Agencia reúne bajo un mismo paraguas el acompañamiento a las empresas durante todas las etapas de su actividad.
 
-## El papel de Andalucía TRADE
+"El empresariado andaluz tiene un socio público durante todo su itinerario y actividad empresarial", resume Castro, quien subraya que esta concentración de servicios permite ofrecer una atención más cercana, ágil y coordinada.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+## Una oferta de financiación con 540 millones de euros
 
-Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.`,
+Uno de los pilares de la actividad de Andalucía TRADE es el apoyo financiero. Según explica su director general, la Agencia ha desplegado "la oferta más completa de apoyo financiero a la empresa andaluza", con una dotación global de 540 millones de euros en 2026.
+
+Entre las líneas actualmente disponibles destacan las destinadas a la creación de pequeñas empresas o las específicas para impulsar la internacionalización y el comercio exterior, ambas cofinanciadas con FEDER. A esto, se suman los fondos de capital riesgo dirigidos a empresas en expansión y startups, además del futuro fondo FAST, especializado en proyectos tecnológicos.
+
+## Más de 700 proyectos aprobados y cerca de dos tercios del presupuesto comprometido
+
+Castro considera que los primeros resultados avalan la eficacia del modelo implantado. Desde la creación de Andalucía TRADE, la Agencia ha recibido más de 2.700 solicitudes, de las que ya se han aprobado favorablemente más de 700.
+
+Estas resoluciones han supuesto la concesión de más de 170 millones de euros en incentivos públicos, capaces de movilizar una inversión conjunta, sumando la aportación privada, superior a 390 millones de euros.
+
+"En esta corta andadura de Andalucía TRADE, de esos 540 millones de nuestra propuesta de valor de apoyo financiero, hemos comprometido prácticamente dos tercios del presupuesto", destaca el director general.
+
+Unos recursos que, recuerda, cuentan además con la cofinanciación de los fondos europeos FEDER, lo que multiplica su capacidad para favorecer el crecimiento del tejido empresarial andaluz.
+
+## Mucho más que financiación: un servicio integral para ganar competitividad
+
+Aunque la financiación constituye una de las principales herramientas de la Agencia, Antonio Castro insiste en que Andalucía TRADE ofrece un acompañamiento mucho más amplio.
+
+La entidad presta servicios especializados en internacionalización, organiza la participación de empresas en ferias y misiones comerciales internacionales y pone a su disposición una red de oficinas en el exterior que facilita el acceso a más de 70 mercados. A todo esto, se suman programas de apoyo a la innovación, iniciativas de compra pública, servicios de atracción de inversiones y asesoramiento para participar en programas europeos.
+
+"Estamos hablando de un servicio 360 grados que busca ayudar a las empresas a ganar competitividad por la vía de la innovación y de la internacionalización", señala.
+
+La última iniciativa puesta en marcha por la entidad es Andalucía TRADE Impulsa, una publicación digital repleta de contenidos audiovisuales que buscan acercar a las empresas todos los servicios que presta la Agencia mediante un formato más directo y accesible.
+
+Con este nuevo espacio, la Agencia reforzará la difusión de las oportunidades que ofrece a las empresas y, al mismo tiempo, contribuirá a mejorar la proyección del tejido productivo andaluz como referente de innovación y competitividad.`,
   category: "Entrevista",
   author: "Redacción",
-  date: "Junio 2026",
+  date: "Julio 2026",
   readTime: 6,
-  image: "/carolina.jpg",
-  slug: "entrevista-carolina-espana-reina-andalucia-trade",
+  image: "/antonio-castro.jpg",
+  slug: "entrevista-antonio-castro-director-general-andalucia-trade",
 };
 
 // ─── TONELERÍA DEL SUR ────────────────────────────────────────────────────
 const toneleria: Article = {
   id: 15,
   title: "La mejor tonelería del mundo exporta a 40 países desde Montilla, Córdoba",
-  excerpt: "Tonelería del Sur, premiada tres veces como Cooperage of The Year, exporta el 95% de su producción bajo la marca Casknolia a destilerías de whisky y ron en todo el mundo.",
-  body: `El pasado mes de abril de 2026, Tonelería del Sur renovó en Londres un título inusual: Cooperage of The Year (Tonelería del Año). Y lo consigue bajo su marca para exportación internacional Casknolia.
+  excerpt: "En abril de 2026, Tonelería del Sur recibió en Londres por tercera vez el reconocimiento Cooperage of the Year, que ya había obtenido en 2023 y 2024, consolidando su posición como una de las referencias mundiales del sector bajo su marca internacional Casknolia.",
+  body: `En abril de 2026, la empresa cordobesa Tonelería del Sur volvió a situar el nombre de Andalucía en la élite internacional del sector al recibir en Londres el prestigioso reconocimiento Cooperage of the Year (Tonelería del Año), un galardón que ya había obtenido en 2023 y 2024. El premio distingue la excelencia en la fabricación de barricas para destilados y consolida la posición de la compañía como una de las referencias mundiales del sector bajo su marca internacional Casknolia.
 
-Lo que comenzó como un taller artesanal y familiar, ha evolucionado a una marca referente a nivel nacional e internacional en la fabricación de barriles de alta calidad para el sector de los destilados (especialmente whisky y ron). Lo que le ha valido para ser en tres ocasiones la Tonelería del Año: en 2023, 2024 y 2026.
+Lo que comenzó en 1974 como un pequeño negocio familiar en Montilla (Córdoba) se ha convertido en una empresa con presencia global que exporta el 95% de su producción. Sus barricas viajan cada año a destilerías de más de cuarenta países, entre ellos Escocia, Irlanda, Japón, India y Estados Unidos, donde son utilizadas para la crianza de algunos de los whiskies y rones más valorados del mercado.
 
-Tonelería del Sur, nacida en 1974 en Montilla (Córdoba), exporta el 95% de su producción. Sus clientes son destilerías de más de cuarenta países, situadas en Escocia, Irlanda, Japón, India y EE. UU, entre otros. La clave de este reconocimiento internacional reside en un valor añadido único: el envinado de sus barricas durante dos años para transferir a la madera de roble de los vinos andaluces con Denominaciones de Origen como son Jerez, Málaga o Montilla-Moriles.
+## Medio siglo de historia con la mirada puesta en el crecimiento
 
-No todos los toneles son iguales, ya que pueden fabricarse con distintos tipos de madera, como roble americano, francés, español o incluso sueco. En este contexto, Casknolia es la marca internacional bajo la que Tonelería del Sur comercializa sus productos en el exterior.
+Coincidiendo con la celebración de más de cincuenta años de trayectoria, Tonelería del Sur afronta una nueva etapa de expansión. La empresa está ejecutando un proyecto para ampliar y modernizar sus instalaciones, que cuenta con un incentivo de 1.260.852,98 euros concedido por Andalucía TRADE en el marco de la Línea de Crecimiento y mejora de la competitividad de las pymes, cofinanciada en un 85% por el Fondo Europeo de Desarrollo Regional (FEDER) 2021-2027.
 
-La empresa cuenta, además, con diversas gamas que responden a las necesidades de sus clientes, desde barriles de madera virgen fabricados a medida hasta la reparación de barricas usadas en bodegas de vino, también conocidas como 'botas'.
+La actuación permitirá incrementar significativamente la capacidad productiva de la compañía, que prevé pasar de fabricar unas 12.000 barricas anuales a superar las 20.000. Además, contribuirá a concentrar la actividad de la empresa en un único emplazamiento en Montilla, facilitando la logística y mejorando la eficiencia de unos procesos que actualmente se distribuyen entre ocho naves situadas en distintas localidades.
 
-Su proyecto de ampliación de instalaciones ha sido incentivado con 1.260.852,98 euros por la Agencia Andalucía TRADE y se enmarca en la Línea de Crecimiento y mejora de la competitividad de las Pymes, cofinanciada en un 85% por el Fondo Europeo de Desarrollo Regional, en el marco del Programa Operativo Andalucía FEDER 2021-2027.
-
-## Medio siglo de historia con la mirada en el futuro
-
-La empresa está inmersa en un plan de expansión, tanto de sus instalaciones como en el aumento de su capacidad de producción, la cual calculan que pasará de 12.000 a más de 20.000 barriles anuales. Un reto que pasa por unificar sus instalaciones en Montilla, ya que actualmente trabajan de forma fragmentada en ocho naves distintas repartidas en diferentes localidades. En siguientes fases de su proyecto, las expectativas son incluir una bodega propia y hacer las instalaciones visitables para fomentar el turismo enológico y la economía local.`,
+La hoja de ruta de la empresa va más allá del aumento de producción. Entre sus planes de futuro figura la creación de una bodega propia y la apertura de sus instalaciones a visitas, con el objetivo de impulsar el turismo enológico y generar un mayor impacto económico en el territorio. Una estrategia que combina tradición artesanal, innovación y vocación internacional para seguir llevando el nombre de Andalucía a los principales mercados del mundo.`,
   category: "Tu proyecto cuenta",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 4,
   image: "/toneleria-01.png",
   gallery: ["/toneleria-01.png", "/toneleria-02.png", "/toneleria-03.png", "/toneleria-04.png"],
@@ -269,7 +289,7 @@ El objetivo de esta acción es contribuir a la internacionalización de la ense�
 La delegación internacional estuvo integrada por representantes de diferentes instituciones educativas (escuelas de secundaria, community colleges y universidades) procedentes de Chicago, Miami, Los Ángeles y Montreal. Entre las entidades visitantes figuran la University of Illinois at Chicago, Northwestern University, Florida Atlantic University, Florida Christian School, Westside Neighborhood School, así como varios centros de educación superior de Quebec, entre ellos Dawson College, Cégep de Shawinigan, Cégep de Drummondville y Cégep André-Laurendeau.`,
   category: "Andalucía TRADE informa",
   author: "Redacción",
-  date: "Junio 2026",
+  date: "Julio 2026",
   readTime: 4,
   image: "/EEUU-Canadá.jpeg",
   slug: "andalucia-trade-ele-eeuu-canada-ensenanza-espanol",
@@ -303,7 +323,7 @@ La misión tiene como principales objetivos fomentar la presencia de productos y
 La organización de esta acción por parte de Andalucía TRADE será cofinanciada con fondos procedentes de la Unión Europea, con cargo al Programa Operativo FEDER de Andalucía 2021-2027, dotado con una contribución comunitaria del 85%.`,
   category: "Andalucía TRADE informa",
   author: "Redacción",
-  date: "Junio 2026",
+  date: "Julio 2026",
   readTime: 4,
   image: "/Perú.png",
   slug: "andalucia-trade-mision-comercial-construccion-peru-lima",
@@ -341,7 +361,7 @@ ADM Sevilla arrancó con una jornada de conferencias plenarias de alto valor est
 ADM Sevilla refuerza su carácter de gran cita nacional de la industria aeroespacial, al congregar empresas procedentes de prácticamente todo el territorio español: Andalucía, Comunidad de Madrid, Cataluña, País Vasco, Castilla-La Mancha, Castilla y León, Galicia, Navarra, Aragón, Comunidad Valenciana y Asturias.`,
   category: "Andalucía TRADE informa",
   author: "Redacción",
-  date: "Mayo 2026",
+  date: "Julio 2026",
   readTime: 5,
   image: "/adm-fibes.jpg",
   gallery: ["/adm-fibes.jpg"],
@@ -385,7 +405,7 @@ La sesión concluyó con un espacio de debate en el que los expertos respondiero
 Entre las principales conclusiones destacaron la necesidad de adoptar una visión estratégica de la innovación, buscar apoyo especializado desde las fases iniciales de los proyectos y aprovechar las redes y herramientas existentes para acceder a financiación, conocimiento y colaboración internacional.`,
   category: "Streaming",
   author: "Redacción",
-  date: "Junio 2026",
+  date: "Julio 2026",
   readTime: 5,
   image: "https://picsum.photos/seed/reto-innovacion/800/500",
   videoUrl: "https://www.youtube.com/watch?v=yaMVIpQtiCc",
@@ -394,7 +414,7 @@ Entre las principales conclusiones destacaron la necesidad de adoptar una visió
 
 // ─── EXPORTS ───────────────────────────────────────────────────────────────
 
-export { carolinaespana, ariema, toneleria, aceitunastorrent, adm, eleeeuu, peru };
+export { antoniocastro, ariema, toneleria, aceitunastorrent, adm, eleeeuu, peru };
 
 export const sidebarArticles: Article[] = [ariema, aceitunastorrent];
 
@@ -405,17 +425,17 @@ export const allArticles: Article[] = [samafrava, antonioespana, planho];
 export const allArticlesExtended: Article[] = [
   featuredArticle,
   // Entrevista
-  carolinaespana,
+  antoniocastro,
   // Tu proyecto cuenta — solo primer número
   ariema,
   toneleria,
   // En femenino
   aceitunastorrent,
   // En femenino (ya incluido arriba)
-  // Andalucía TRADE informa
+  // Andalucía TRADE informa — ADM destacado, luego Enseñanza del español y Perú
+  adm,
   eleeeuu,
   peru,
-  adm,
   // Streaming
   retoInnovacion,
 ];
