@@ -332,33 +332,39 @@ La organización de esta acción por parte de Andalucía TRADE será cofinanciad
 // ─── ADM ───────────────────────────────────────────────────────────────────
 const adm: Article = {
   id: 14,
-  title: "ADM Sevilla cierra con cifras récord: 1.500 participantes de 30 países y 9.000 reuniones de negocios",
-  excerpt: "Su octava edición registra cifras históricas con 415 empresas participantes, un 29,7% más que la edición anterior, y consolida Sevilla como polo aeroespacial de referencia en Europa.",
-  body: `Aerospace & Defense Meetings-ADM Sevilla 2026 clausuró su octava edición en Fibes con cifras récord: 1.500 profesionales participantes de 30 países, 415 empresas y alrededor de 9.000 reuniones de negocio. Unos resultados que contribuirán a impulsar la industria aeroespacial española y, en particular, la andaluza.
+  title: "Andalucía TRADE destaca el éxito de ADM Sevilla 2026, que reunió a 1.500 profesionales de 30 países y generó 9.000 reuniones de negocio",
+  excerpt: "El encuentro reafirma el liderazgo de Andalucía como referente aeroespacial y de defensa en Europa y propicia nuevas alianzas internacionales para las empresas andaluzas.",
+  body: `Aerospace & Defense Meetings (ADM) Sevilla 2026 cerró su octava edición consolidándose como el principal encuentro de negocios de la industria aeroespacial y de defensa en España y el de mayor participación del sur de Europa. Durante tres jornadas, el evento reunió en Sevilla a 1.500 profesionales procedentes de 30 países, 417 empresas y alrededor de 9.000 reuniones bilaterales de negocio, confirmando el creciente peso internacional del sector aeroespacial andaluz.
 
-Con este balance, refuerza su carácter de evento de negocio de referencia para el sector aeroespacial de España y el de más participación del sur de Europa, al convertirse en un marco privilegiado para las relaciones comerciales de la industria andaluza y española con el mundo, con noticias de alto interés, protagonizadas principalmente por el anuncio de Airbus de abrir en Sevilla un centro de conversión del A330 MRTT y el contrato de Sofitec con la turca TAI para fabricar componentes para Boeing.
+Organizado por la Consejería de Economía, Hacienda y Fondos Europeos, a través de Andalucía TRADE, junto a BCI Aerospace y con Airbus como socio principal del evento, el encuentro sirvió como plataforma para impulsar oportunidades de negocio, colaboración e inversión entre empresas e instituciones de todo el mundo.
 
-ADM Sevilla, organizado por la Junta de Andalucía, a través de Andalucía TRADE, y por la empresa BCI Aerospace, fue inaugurado por la consejera de Economía, Hacienda, Fondos Europeos y Diálogo Social, Carolina España, y el presidente de Aviones Comerciales de Airbus España, Ricardo Rojas.
+El consejero de Universidad, Industria, Energía e Innovación, Jorge Paradela, destacó que "es un sector estratégico para el Gobierno en su conjunto y prueba de ello es esta feria que lidera la Agencia TRADE y los programas de promoción de la Consejería". Por su parte, la consejera de Economía, Hacienda y Fondos Europeos, Carolina España, puso de relieve que "ADM Sevilla es el mejor reflejo de ese buen estado de la industria aeroespacial andaluza y de su protagonismo en el mundo".
 
-## Récord de participación en ADM Sevilla
+## Grandes anuncios para el sector
 
-Con unas cifras de cierre históricas, ADM Sevilla 2026 reunió a 1.500 profesionales —un 11,7% más que en la edición anterior— y 415 empresas —un 29,7% más que en 2024—, procedentes de 30 países. Durante el encuentro se celebraron un total de 9.000 reuniones de negocio en formato B2B.
+ADM Sevilla 2026, una iniciativa cofinanciada con el Programa de Andalucía FEDER 2021-2027, fue escenario de importantes anuncios estratégicos para la industria aeroespacial. Entre ellos, Airbus confirmó una nueva inversión en Andalucía con la puesta en marcha de un centro de conversión del avión cisterna A330 MRTT en su planta de San Pablo, en Sevilla, reforzando el posicionamiento de la comunidad autónoma en la industria aeroespacial internacional.
 
-ADM Sevilla se confirma como cita de gran interés para la industria internacional, hasta el punto de que la mitad de las empresas participantes (50%) son extranjeras, con un total de 55 grandes contratistas (OEMs).
+Asimismo, durante el encuentro se dieron a conocer nuevos acuerdos industriales y colaboraciones internacionales, entre los que destacó el acuerdo entre Sofitec y Turkish Aerospace Industries, que contribuirá a ampliar las capacidades industriales y exportadoras del sector.
 
-## Grandes anuncios del sector
+## Andalucía TRADE impulsa nuevas alianzas e internacionalización
 
-ADM Sevilla se ha consolidado como centro de las noticias del sector aeroespacial andaluz y español. Airbus anunció la apertura en su planta de San Pablo de Sevilla de un centro de conversión del A330 MRTT para dar respuesta al incremento de la demanda mundial. Este anuncio supondrá la creación de alrededor de 200 puestos de trabajo directos en la industria auxiliar del sector.
+El encuentro también permitió fortalecer la colaboración entre los principales agentes del sector aeroespacial. En este marco se renovó el convenio de colaboración entre Andalucía TRADE y Andalucía Aerospace, consolidando una alianza estratégica para apoyar el crecimiento de la industria andaluza.
 
-Sofitec, patrocinador gold del evento, firmó un contrato con la compañía turca TAI para fabricar de manera conjunta componentes para los aviones Boeing 737 MAX, concretamente aeroestructuras de recubrimiento de la carcasa de los motores de este avión.
+El director general de Andalucía TRADE, Antonio Castro, subrayó que "ADM es una herramienta para apoyar la innovación, facilitar la internacionalización de nuestras empresas y ofrecer instrumentos eficaces para su crecimiento".
 
-## 54 ponentes en 21 conferencias
+## Innovación, defensa y ciberseguridad centran el debate
 
-ADM Sevilla arrancó con una jornada de conferencias plenarias de alto valor estratégico que congregó a cerca de 400 profesionales y altos directivos de las principales compañías del sector aeroespacial y de defensa en España. Los temas tratados abarcaron innovación, ciberseguridad, defensa y las oportunidades de inversión.
+La programación de contenidos reunió a 54 ponentes en 21 conferencias especializadas, con la participación de cerca de 400 profesionales. Las sesiones abordaron algunos de los principales retos y oportunidades del sector, centrándose en ámbitos como la innovación tecnológica, la defensa, la ciberseguridad, la inversión y el desarrollo industrial.
 
-## Empresas de 11 regiones españolas
+Estas jornadas permitieron analizar las tendencias que marcarán el futuro de la industria aeroespacial y contribuir a reforzar la competitividad de las empresas andaluzas en los mercados internacionales.
 
-ADM Sevilla refuerza su carácter de gran cita nacional de la industria aeroespacial, al congregar empresas procedentes de prácticamente todo el territorio español: Andalucía, Comunidad de Madrid, Cataluña, País Vasco, Castilla-La Mancha, Castilla y León, Galicia, Navarra, Aragón, Comunidad Valenciana y Asturias.`,
+## Impulso al talento y presencia de los grandes líderes del sector
+
+La edición de 2026 incorporó además nuevas iniciativas orientadas a fomentar el talento y acercar la industria aeroespacial a las nuevas generaciones. Entre ellas destacó la celebración del Student Day, que reunió a más de 200 estudiantes interesados en desarrollar su carrera profesional en este ámbito.
+
+ADM Sevilla volvió igualmente a congregar a algunos de los principales fabricantes y contratistas del sector a escala internacional, con la presencia de 55 OEMs y compañías líderes como Airbus, Boeing, Embraer, Lockheed Martin, Leonardo y Saab, reforzando el alcance global del encuentro y su capacidad para atraer a los principales actores de la industria.
+
+Con cifras récord de participación, nuevas inversiones, acuerdos estratégicos y una intensa actividad empresarial, ADM Sevilla 2026 reafirma el liderazgo de Andalucía como referente aeroespacial y de defensa en Europa y consolida el papel de Andalucía TRADE como instrumento para impulsar la competitividad e internacionalización del tejido empresarial andaluz.`,
   category: "Andalucía TRADE informa",
   author: "Redacción",
   date: "Julio 2026",
