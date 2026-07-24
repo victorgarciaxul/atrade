@@ -90,9 +90,16 @@ export default async function ArticlePage({ params }: Props) {
           </span>
 
           {/* Título */}
-          <h1 className="font-brand text-primary text-[28px] sm:text-[34px] font-[500] leading-tight mb-6">
+          <h1 className="font-brand text-primary text-[28px] sm:text-[34px] font-[500] leading-tight mb-4">
             {article.title}
           </h1>
+
+          {/* Entradilla */}
+          {article.excerpt && (
+            <p className="text-secondary text-lg leading-relaxed mb-6">
+              {article.excerpt}
+            </p>
+          )}
 
           {/* ── Vídeo principal (si existe) ───────────────────── */}
           {article.videoUrl ? (
@@ -139,11 +146,6 @@ export default async function ArticlePage({ params }: Props) {
               }
               return <p key={i}>{block}</p>;
             })}
-
-            {/* Si no hay body, muestra el excerpt */}
-            {bodyBlocks.length === 0 && (
-              <p>{article.excerpt}</p>
-            )}
           </div>
 
           {/* ── Galería de imágenes (si existe) ──────────────────── */}
