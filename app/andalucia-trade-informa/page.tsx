@@ -1,8 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 import { allArticlesExtended } from "@/lib/mockData";
+import { getCategoryArticles } from "@/lib/wordpress";
 
-export default function AndaluciaTRADEInformaPage() {
-  const pool = allArticlesExtended.filter((a) => a.category === "Andalucía TRADE informa");
+export default async function AndaluciaTRADEInformaPage() {
+  const fallback = allArticlesExtended.filter((a) => a.category === "Andalucía TRADE informa");
+  const pool = await getCategoryArticles("andalucia-trade-informa", fallback, 9);
 
   const featured = pool[0];
   const bigCard = pool[1] ?? null;

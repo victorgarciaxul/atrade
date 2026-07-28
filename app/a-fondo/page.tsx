@@ -1,8 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 import { allArticlesExtended } from "@/lib/mockData";
+import { getCategoryArticles } from "@/lib/wordpress";
 
-export default function AFondoPage() {
-  const pool = allArticlesExtended.filter((a) => a.category === "A fondo");
+export default async function AFondoPage() {
+  const fallback = allArticlesExtended.filter((a) => a.category === "A fondo");
+  const pool = await getCategoryArticles("a-fondo", fallback, 9);
 
   const featured = pool[0];
   const bigCard = pool[1] ?? null;

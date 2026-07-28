@@ -4,7 +4,7 @@ import BannerImpulsa from "@/components/BannerImpulsa";
 import HeroSection from "@/components/HeroSection";
 import ArticleCard from "@/components/ArticleCard";
 import SidebarCard from "@/components/SidebarCard";
-import { getPosts } from "@/lib/wordpress";
+import { getCategoryArticles } from "@/lib/wordpress";
 import {
   antoniocastro,
   featuredArticle,
@@ -16,12 +16,6 @@ import {
   peru,
 } from "@/lib/mockData";
 import { Article } from "@/lib/types";
-
-/** Pide posts de WordPress por categoría; si la API falla o no hay resultados, usa el fallback de mockData. */
-async function postsOrFallback(categorySlug: string, perPage: number, fallback: Article[]): Promise<Article[]> {
-  const posts = await getPosts({ categorySlug, perPage });
-  return posts && posts.length > 0 ? posts : fallback;
-}
 
 function CategorySection({ title, articles, href, featured }: { title: string; articles: Article[]; href?: string; featured?: boolean }) {
   return (
@@ -130,11 +124,11 @@ function CategorySection({ title, articles, href, featured }: { title: string; a
 
 export default async function Home() {
   const [entrevista, tuProyectoCuenta, aFondo, tradeInforma, enFemenino] = await Promise.all([
-    postsOrFallback("entrevista", 1, [antoniocastro]),
-    postsOrFallback("tu-proyecto-cuenta", 2, [ariema, toneleria]),
-    postsOrFallback("a-fondo", 1, [featuredArticle]),
-    postsOrFallback("andalucia-trade-informa", 3, [adm, eleeeuu, peru]),
-    postsOrFallback("en-femenino", 1, [aceitunastorrent]),
+    getCategoryArticles("entrevista", [antoniocastro], 1),
+    getCategoryArticles("tu-proyecto-cuenta", [ariema, toneleria], 2),
+    getCategoryArticles("a-fondo", [featuredArticle], 1),
+    getCategoryArticles("andalucia-trade-informa", [adm, eleeeuu, peru], 3),
+    getCategoryArticles("en-femenino", [aceitunastorrent], 1),
   ]);
 
   return (

@@ -1,8 +1,10 @@
 import CategoryPage from "@/components/CategoryPage";
 import { allArticlesExtended } from "@/lib/mockData";
+import { getCategoryArticles } from "@/lib/wordpress";
 
-export default function EnFemeninoPage() {
-  const pool = allArticlesExtended.filter((a) => a.category === "En femenino");
+export default async function EnFemeninoPage() {
+  const fallback = allArticlesExtended.filter((a) => a.category === "En femenino");
+  const pool = await getCategoryArticles("en-femenino", fallback, 9);
 
   const featured = pool[0];
   const bigCard = pool[1] ?? null;

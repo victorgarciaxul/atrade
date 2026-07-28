@@ -67,9 +67,11 @@ export default function CategoryPage({
             {featured.title}
           </h2>
           <div className="flex flex-col gap-3 text-secondary text-[14px] leading-relaxed">
-            {featured.body?.split("\n\n").slice(0, 3).map((para, i) => (
-              <p key={i}>{para}</p>
-            )) ?? <p>{featured.excerpt}</p>}
+            {featured.body
+              ?.split("\n\n")
+              .filter((para) => !para.startsWith("## "))
+              .slice(0, 3)
+              .map((para, i) => <p key={i}>{para}</p>) ?? <p>{featured.excerpt}</p>}
           </div>
           <div className="flex items-center justify-between mt-2">
             <div className="flex items-center gap-2 text-xs text-grey">

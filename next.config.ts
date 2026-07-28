@@ -1,5 +1,8 @@
 import type { NextConfig } from "next";
 
+/** Host de la API/medios de WordPress. Cambiar aquí cuando se disponga del dominio final. */
+const WP_HOSTNAME = "10.240.65.30";
+
 const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -9,6 +12,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "picsum.photos" },
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "img.youtube.com" },
+      { protocol: "http", hostname: WP_HOSTNAME },
     ],
   },
 };

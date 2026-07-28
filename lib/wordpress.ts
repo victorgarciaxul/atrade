@@ -49,6 +49,24 @@ function stripHtml(html: string): string {
     .trim();
 }
 
+/** Busca una URL de YouTube/Vimeo embebida en el contenido (iframe o bloque wp-block-embed). */
+function extractVideoUrl(html: string): string | undefined {
+  const iframeMatch = html.match(/<iframe[^>]+src="([^"]*(?:youtube\.com|youtu\.be|vimeo\.com)[^"]*)"/i);
+  if (iframeMatch) return iframeMatch[1];
+
+  const linkMatch = html.match(
+    /https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[\w-]+|youtu\.be\/[\w-]+|vimeo\.com\/\d+)/i
+  );
+  return linkMatch?.[0];
+}
+
+/** Elimina los bloques de embed de vídeo del HTML para que no queden restos en el cuerpo del artículo. */
+function stripVideoEmbeds(html: string): string {
+  return html
+    .replace(/<figure[^>]*wp-block-embed[^>]*>[\s\S]*?<\/figure>/gi, "")
+    .replace(/<iframe[\s\S]*?<\/iframe>/gi, "");
+}
+
 function htmlToBody(html: string): string {
   return html
     .replace(/<h[1-4][^>]*>(.*?)<\/h[1-4]>/gi, "\n\n## $1\n\n")
@@ -82,17 +100,20 @@ function mapPost(post: WpPost): Article {
   const category = post._embedded?.["wp:term"]?.[0]?.[0]?.name ?? "Sin categoría";
   const author = post._embedded?.author?.[0]?.name ?? "Redacción";
   const image = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? "";
+  const videoUrl = extractVideoUrl(post.content.rendered);
+  const bodyHtml = videoUrl ? stripVideoEmbeds(post.content.rendered) : post.content.rendered;
 
   return {
     id: post.id,
     title: stripHtml(post.title.rendered),
     excerpt: stripHtml(post.excerpt.rendered),
-    body: htmlToBody(post.content.rendered),
+    body: htmlToBody(bodyHtml),
     category,
     author,
     date: formatDate(post.date),
     readTime: estimateReadTime(post.content.rendered),
     image,
+    videoUrl,
     slug: post.slug,
   };
 }
@@ -154,4 +175,14 @@ export async function getPostBySlug(slug: string): Promise<Article | null> {
   const posts = await wpFetch<WpPost[]>(`/posts?${params.toString()}`);
   if (!posts || posts.length === 0) return null;
   return mapPost(posts[0]);
+}
+
+/** Posts de WordPress por categoría; si la API falla o no hay resultados, usa el fallback de mockData. */
+export async function getCategoryArticles(
+  categorySlug: string,
+  fallback: Article[],
+  perPage = 10
+): Promise<Article[]> {
+  const posts = await getPosts({ categorySlug, perPage });
+  return posts && posts.length > 0 ? posts : fallback;
 }
