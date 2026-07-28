@@ -30,7 +30,7 @@ Con este sistema híbrido de financiación, Andalucía TRADE refuerza su papel c
   author: "Redacción",
   date: "Julio 2026",
   readTime: 5,
-  image: "https://picsum.photos/seed/atrade-afondo/800/500",
+  image: "/cartuja-a-fondo.png",
   videoUrl: "https://youtu.be/FiKcium72ys",
   slug: "financiacion-empresarial-andalucia-trade-500-millones",
 };
@@ -370,8 +370,8 @@ Con cifras récord de participación, nuevas inversiones, acuerdos estratégicos
   author: "Redacción",
   date: "Julio 2026",
   readTime: 5,
-  image: "/adm-fibes.jpg",
-  gallery: ["/adm-fibes.jpg"],
+  image: "/adm-martes-004.jpg",
+  gallery: ["/adm-martes-004.jpg", "/adm-fibes.jpg"],
   videoUrl: "https://www.youtube.com/watch?v=K6QgSygkJWY",
   slug: "adm-sevilla-2026-cifras-record-aeroespacial-andalucia",
 };

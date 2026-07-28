@@ -23,12 +23,6 @@ async function postsOrFallback(categorySlug: string, perPage: number, fallback: 
   return posts && posts.length > 0 ? posts : fallback;
 }
 
-function getYTThumb(videoUrl?: string): string | null {
-  if (!videoUrl) return null;
-  const m = videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);
-  return m ? `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg` : null;
-}
-
 function CategorySection({ title, articles, href, featured }: { title: string; articles: Article[]; href?: string; featured?: boolean }) {
   return (
     <section className="max-w-[1512px] mx-auto px-6 py-8 border-t border-gray-100">
@@ -47,12 +41,11 @@ function CategorySection({ title, articles, href, featured }: { title: string; a
           <Link href={`/article/${articles[0].slug}`} className="group flex flex-col gap-4">
             <div className="relative w-full h-[320px] rounded-2xl overflow-hidden bg-gray-900">
               {(() => {
-                const thumb = getYTThumb(articles[0].videoUrl);
-                const src = thumb ?? articles[0].image;
+                const src = articles[0].image;
                 return (
                   <>
                     <Image src={src} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width:1024px) 100vw, 60vw" />
-                    {thumb && (
+                    {articles[0].videoUrl && (
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-12 h-12 rounded-full bg-black/50 flex items-center justify-center group-hover:bg-black/70 transition-colors duration-200">
                           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21" /></svg>
@@ -92,12 +85,11 @@ function CategorySection({ title, articles, href, featured }: { title: string; a
         <Link href={`/article/${articles[0].slug}`} className="group flex flex-col lg:flex-row gap-8 items-start">
           <div className="relative w-full lg:w-[480px] shrink-0 h-[280px] rounded-2xl overflow-hidden bg-gray-900">
             {(() => {
-              const thumb = getYTThumb(articles[0].videoUrl);
-              const src = thumb ?? articles[0].image;
+              const src = articles[0].image;
               return (
                 <>
                   <Image src={src} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width:1024px) 100vw, 480px" />
-                  {thumb && (
+                  {articles[0].videoUrl && (
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-12 h-12 rounded-full bg-black/50 flex items-center justify-center group-hover:bg-black/70 transition-colors duration-200">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21" /></svg>

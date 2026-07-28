@@ -1,15 +1,8 @@
 import Image from "next/image";
 import { Article } from "@/lib/types";
 
-function getYTThumb(videoUrl?: string): string | null {
-  if (!videoUrl) return null;
-  const m = videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);
-  return m ? `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg` : null;
-}
-
 export default function ArticleCard({ article }: { article: Article }) {
-  const thumb = getYTThumb(article.videoUrl);
-  const imgSrc = thumb ?? article.image;
+  const imgSrc = article.image;
 
   return (
     <div className="flex flex-col gap-3 cursor-pointer group">
@@ -21,7 +14,7 @@ export default function ArticleCard({ article }: { article: Article }) {
           className="object-cover group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, 25vw"
         />
-        {thumb && (
+        {article.videoUrl && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-12 h-12 rounded-full bg-black/50 flex items-center justify-center group-hover:bg-black/70 transition-colors duration-200">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white">

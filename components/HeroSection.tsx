@@ -3,20 +3,13 @@ import Link from "next/link";
 import { Article } from "@/lib/types";
 import SidebarCard from "./SidebarCard";
 
-function getYTThumb(videoUrl?: string): string | null {
-  if (!videoUrl) return null;
-  const m = videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);
-  return m ? `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg` : null;
-}
-
 interface HeroSectionProps {
   featured: Article;
   sidebar: Article[];
 }
 
 export default function HeroSection({ featured, sidebar }: HeroSectionProps) {
-  const thumb = getYTThumb(featured.videoUrl);
-  const imgSrc = thumb ?? featured.image;
+  const imgSrc = featured.image;
 
   return (
     <section className="max-w-[1512px] mx-auto px-6 py-10">
@@ -50,7 +43,7 @@ export default function HeroSection({ featured, sidebar }: HeroSectionProps) {
             priority
             sizes="(max-width: 1024px) 100vw, 40vw"
           />
-          {thumb && (
+          {featured.videoUrl && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-16 h-16 rounded-full bg-black/50 flex items-center justify-center group-hover:bg-black/70 transition-colors duration-200">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
