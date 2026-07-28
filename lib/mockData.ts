@@ -31,7 +31,7 @@ Con este sistema híbrido de financiación, Andalucía TRADE refuerza su papel c
   date: "Julio 2026",
   readTime: 5,
   image: "https://picsum.photos/seed/atrade-afondo/800/500",
-  videoUrl: "https://youtu.be/CLBQ8P7eV9E",
+  videoUrl: "https://youtu.be/FiKcium72ys",
   slug: "financiacion-empresarial-andalucia-trade-500-millones",
 };
 

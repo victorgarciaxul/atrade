@@ -113,7 +113,9 @@ function CategorySection({ title, articles, href, featured }: { title: string; a
             <h3 className="font-brand text-primary text-[22px] font-[500] leading-snug group-hover:text-green transition-colors duration-200">
               {articles[0].title}
             </h3>
-            <p className="text-secondary text-[15px] leading-relaxed">{articles[0].excerpt}</p>
+            <p className="text-secondary text-[15px] leading-relaxed">
+              {articles[0].body?.split("\n\n")[0] ?? articles[0].excerpt}
+            </p>
             <div className="flex items-center gap-2 text-xs text-grey">
               <span>{articles[0].date}</span>
               <span>|</span>
