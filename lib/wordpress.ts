@@ -156,7 +156,12 @@ export async function getPosts(options: {
 } = {}): Promise<Article[] | null> {
   const { categorySlug, perPage = 10 } = options;
 
-  const params = new URLSearchParams({ _embed: "1", per_page: String(perPage) });
+  const params = new URLSearchParams({
+    _embed: "1",
+    per_page: String(perPage),
+    orderby: "menu_order",
+    order: "asc",
+  });
 
   if (categorySlug) {
     const categoryId = await getCategoryId(categorySlug);
