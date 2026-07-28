@@ -65,7 +65,7 @@ Junto a su actividad industrial, Ariema mantiene una fuerte presencia internacio
   readTime: 5,
   image: "/ariema-01.png",
   gallery: ["/ariema-02.png", "/ariema-03.png", "/ariema-04.png"],
-  videoUrl: "https://www.youtube.com/watch?v=v8BIOks-qXY",
+  videoUrl: "https://youtu.be/vHyrxPzxRJ8",
   slug: "ariema-enerxia-hidrogeno-verde-huelva",
 };
 
@@ -98,7 +98,7 @@ Ese liderazgo se traslada también a la filosofía interna de la compañía, don
   readTime: 5,
   image: "/torrent-01.jpg",
   gallery: ["/torrent-02.jpg", "/torrent-03.jpg", "/torrent-04.jpg", "/torrent-05.jpg"],
-  videoUrl: "https://www.youtube.com/watch?v=IWZMwtnYCQM",
+  videoUrl: "https://youtu.be/TxlTedJp6T8",
   slug: "blanca-torrent-aceitunas-torrent-en-femenino",
 };
 
@@ -242,6 +242,7 @@ Con este nuevo espacio, la Agencia reforzará la difusión de las oportunidades 
   date: "Julio 2026",
   readTime: 6,
   image: "/antonio-castro.jpg",
+  videoUrl: "https://youtu.be/MdkNsxDEEv8",
   slug: "entrevista-antonio-castro-director-general-andalucia-trade",
 };
 
@@ -267,7 +268,7 @@ La hoja de ruta de la empresa va más allá del aumento de producción. Entre su
   readTime: 4,
   image: "/toneleria-01.png",
   gallery: ["/toneleria-01.png", "/toneleria-02.png", "/toneleria-03.png", "/toneleria-04.png"],
-  videoUrl: "https://www.youtube.com/watch?v=cLeFirKtdxY",
+  videoUrl: "https://youtu.be/NvHZk0Y1yTY",
   slug: "toneleria-del-sur-cooperage-year-montilla-cordoba",
 };
 
