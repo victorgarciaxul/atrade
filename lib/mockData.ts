@@ -299,7 +299,7 @@ La delegación internacional estuvo integrada por representantes de diferentes i
 // ─── PERÚ ─────────────────────────────────────────────────────────────────
 const peru: Article = {
   id: 18,
-  title: "Andalucía TRADE impulsa la internacionalización de la construcción en Perú con oportunidades en infraestructuras, vivienda y obra pública",
+  title: "Andalucía TRADE muestra a empresas andaluzas las oportunidades en infraestructuras, vivienda y obra pública en Perú",
   excerpt: "La agencia organiza una agenda comercial en Lima para empresas de Cádiz, Málaga y Sevilla, con el apoyo de su Antena de Promoción de Negocios en el país.",
   body: `Andalucía TRADE ha organizado una misión comercial sobre el sector de la construcción del 16 al 18 de junio en Lima, Perú, en la que participan cuatro empresas andaluzas, con el objetivo de reforzar la presencia internacional del tejido empresarial de la comunidad en un mercado estratégico en crecimiento. La acción ha permitido la programación de 26 reuniones de negocio con entidades peruanas, consolidando un importante espacio de contacto con potenciales socios, clientes e importadores del país andino.
 
@@ -414,7 +414,7 @@ Entre las principales conclusiones destacaron la necesidad de adoptar una visió
   author: "Redacción",
   date: "Julio 2026",
   readTime: 5,
-  image: "https://picsum.photos/seed/reto-innovacion/800/500",
+  image: "/banner-reto1.png",
   videoUrl: "https://www.youtube.com/watch?v=yaMVIpQtiCc",
   slug: "reto-andalucia-trade-innovacion-vision-europea",
 };
