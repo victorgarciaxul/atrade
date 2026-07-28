@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
+import GalleryLightbox from "@/components/GalleryLightbox";
 import { allArticlesExtended } from "@/lib/mockData";
 import { getPostBySlug, getPosts } from "@/lib/wordpress";
 import { Article } from "@/lib/types";
@@ -152,19 +153,7 @@ export default async function ArticlePage({ params }: Props) {
           {article.gallery && article.gallery.length > 0 && (
             <div className="mt-10">
               <h3 className="font-brand text-primary text-[18px] font-[500] mb-4">Galería</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {article.gallery.map((img, i) => (
-                  <div key={i} className="relative h-[180px] rounded-xl overflow-hidden bg-gray-100">
-                    <Image
-                      src={img}
-                      alt={`${article.title} — imagen ${i + 1}`}
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 50vw, 33vw"
-                    />
-                  </div>
-                ))}
-              </div>
+              <GalleryLightbox images={article.gallery} alt={article.title} />
             </div>
           )}
         </article>
