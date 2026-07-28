@@ -371,7 +371,7 @@ Con cifras récord de participación, nuevas inversiones, acuerdos estratégicos
   date: "Julio 2026",
   readTime: 5,
   image: "/adm-martes-004.jpg",
-  gallery: ["/adm-martes-004.jpg", "/adm-fibes.jpg"],
+  gallery: ["/adm-martes-004.jpg"],
   videoUrl: "https://www.youtube.com/watch?v=K6QgSygkJWY",
   slug: "adm-sevilla-2026-cifras-record-aeroespacial-andalucia",
 };
