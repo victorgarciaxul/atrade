@@ -24,9 +24,11 @@
 #      nativa, así que se construye el HTML a mano).
 #
 # El post de WordPress correspondiente a cada artículo se localiza por su
-# slug con `wp post list --post_type=post --name=<slug> --field=ID` (más
-# simple y sin dependencias que parsear el JSON de --format=json a mano en
-# bash puro; hace exactamente el mismo mapeo slug → ID).
+# TÍTULO con `wp post list --post_type=post --title="..." --field=ID`.
+# migrate-to-wp.sh no pasó --post_name al crear los posts, así que WordPress
+# generó slugs automáticos distintos a los de mockData.ts (por eso no se
+# puede usar el slug para el mapeo); los títulos, en cambio, se copiaron
+# tal cual y sí coinciden exactamente.
 #
 # Uso:
 #   chmod +x migrate-images-to-wp.sh
@@ -53,10 +55,10 @@ fi
 
 # ── Funciones auxiliares ───────────────────────────────────────────────────
 
-# Devuelve el ID del post de WordPress cuyo slug (post_name) coincide.
+# Devuelve el ID del post de WordPress cuyo título coincide exactamente.
 get_post_id() {
-  local slug="$1"
-  wp post list --post_type=post --name="$slug" --field=ID --posts_per_page=1
+  local title="$1"
+  wp post list --post_type=post --title="$title" --field=ID --posts_per_page=1
 }
 
 # Resuelve el origen de una imagen: si es una URL remota la deja tal cual,
@@ -182,19 +184,19 @@ ${gallery_html}" >/dev/null
 }
 
 # Procesa un artículo completo: imagen destacada + vídeo + galería.
-# Uso: process_article <slug> <imagen> <video_url|""> [galeria...]
+# Uso: process_article <título> <imagen> <video_url|""> [galeria...]
 process_article() {
-  local slug="$1" image="$2" video_url="$3"
+  local title="$1" image="$2" video_url="$3"
   shift 3
   local gallery=("$@")
 
-  echo "Procesando: $slug"
+  echo "Procesando: $title"
 
   local post_id
-  post_id=$(get_post_id "$slug")
+  post_id=$(get_post_id "$title")
 
   if [[ -z "$post_id" ]]; then
-    echo "  Aviso: no existe ningún post con slug '$slug'. ¿Se ejecutó antes migrate-to-wp.sh? Se omite este artículo." >&2
+    echo "  Aviso: no existe ningún post con título '$title'. ¿Se ejecutó antes migrate-to-wp.sh? Se omite este artículo." >&2
     return
   fi
   echo "  Post ID: $post_id"
@@ -221,71 +223,71 @@ process_article() {
   echo ""
 }
 
-# ── Artículos (slug, imagen principal, vídeo, galería...) ─────────────────
+# ── Artículos (título exacto, imagen principal, vídeo, galería...) ────────
 
 process_article \
-  "financiacion-empresarial-andalucia-trade-500-millones" \
+  "Más de 500 millones de euros para impulsar la financiación empresarial andaluza" \
   "/cartuja-a-fondo.png" \
   "https://youtu.be/FiKcium72ys"
 
 process_article \
-  "ariema-enerxia-hidrogeno-verde-huelva" \
+  "Ariema refuerza desde Huelva su apuesta por el hidrógeno verde con tecnología propia y foco en la industria" \
   "/ariema-01.png" \
   "https://youtu.be/vHyrxPzxRJ8" \
   "/ariema-02.png" "/ariema-03.png" "/ariema-04.png"
 
 process_article \
-  "blanca-torrent-aceitunas-torrent-en-femenino" \
+  "Torrent: la esencia del olivar cordobés presente en las mesas del mundo" \
   "/torrent-01.jpg" \
   "https://youtu.be/TxlTedJp6T8" \
   "/torrent-02.jpg" "/torrent-03.jpg" "/torrent-04.jpg" "/torrent-05.jpg"
 
 process_article \
-  "entrevista-antonio-castro-director-general-andalucia-trade" \
+  "Andalucía TRADE, un acompañamiento integral para impulsar la competitividad empresarial andaluza" \
   "/antonio-castro.jpg" \
   "https://youtu.be/MdkNsxDEEv8"
 
 process_article \
-  "toneleria-del-sur-cooperage-year-montilla-cordoba" \
+  "La mejor tonelería del mundo exporta a 40 países desde Montilla, Córdoba" \
   "/toneleria-01.png" \
   "https://youtu.be/NvHZk0Y1yTY" \
   "/toneleria-01.png" "/toneleria-02.png" "/toneleria-03.png" "/toneleria-04.png"
 
 process_article \
-  "adm-sevilla-2026-cifras-record-aeroespacial-andalucia" \
+  "Andalucía TRADE destaca el éxito de ADM Sevilla 2026, que reunió a 1.500 profesionales de 30 países y generó 9.000 reuniones de negocio" \
   "/adm-martes-004.jpg" \
   "https://www.youtube.com/watch?v=K6QgSygkJWY" \
   "/adm-martes-004.jpg"
 
 process_article \
-  "andalucia-trade-ele-eeuu-canada-ensenanza-espanol" \
+  "Andalucía TRADE impulsa la enseñanza del español en EE.UU. y Canadá, un ámbito que dejó 1.000 millones de euros en 2025 en la comunidad" \
   "/EEUU-Canadá.jpeg" \
   ""
 
 process_article \
-  "andalucia-trade-mision-comercial-construccion-peru-lima" \
+  "Andalucía TRADE muestra a empresas andaluzas las oportunidades en infraestructuras, vivienda y obra pública en Perú" \
   "/Perú.png" \
   ""
 
 process_article \
-  "reto-andalucia-trade-innovacion-vision-europea" \
+  "Innovación con visión europea" \
   "/banner-reto1.png" \
   "https://www.youtube.com/watch?v=yaMVIpQtiCc"
 
 process_article \
-  "samafrava-ampliacion-planta-embalajes-rute-cordoba" \
+  "Samafrava impulsa su crecimiento en el sector del envase alimentario con la ampliación de sus instalaciones en Rute" \
   "/samafrava-01.jpg" \
   "https://www.youtube.com/watch?v=KUkh-s94b9k" \
   "/samafrava-02.jpg" "/samafrava-03.jpg"
 
 process_article \
-  "antonio-espana-hijos-residuos-inertes-huelva" \
+  "Antonio España refuerza su apuesta por la economía circular con nuevos proyectos de valorización de residuos" \
   "/antonio-espana-01.png" \
   "https://www.youtube.com/watch?v=ZYX-PVn3pO0" \
   "/antonio-espana-02.png" "/antonio-espana-03.png" "/antonio-espana-04.png"
 
 process_article \
-  "planho-consultores-internacionalizacion-trade" \
+  "Lo que no se ve de un hospital: la arquitectura de la empresa sevillana Planho Consultores" \
   "/planho-01.jpg" \
   "https://www.youtube.com/watch?v=Fx751OoD9as" \
   "/planho-02.jpg" "/planho-03.jpg" "/planho-04.jpg"
