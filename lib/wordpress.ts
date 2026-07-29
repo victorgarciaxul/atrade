@@ -156,12 +156,7 @@ export async function getPosts(options: {
 } = {}): Promise<Article[] | null> {
   const { categorySlug, perPage = 10 } = options;
 
-  const params = new URLSearchParams({
-    _embed: "1",
-    per_page: String(perPage),
-    orderby: "menu_order",
-    order: "asc",
-  });
+  const params = new URLSearchParams({ _embed: "1", per_page: String(perPage) });
 
   if (categorySlug) {
     const categoryId = await getCategoryId(categorySlug);
@@ -169,7 +164,19 @@ export async function getPosts(options: {
     params.set("categories", String(categoryId));
   }
 
-  const posts = await wpFetch<WpPost[]>(`/posts?${params.toString()}`);
+  // Orden manual por menu_order. El endpoint /wp/v2/posts de WordPress no admite
+  // "menu_order" como orderby para el tipo "post" salvo que se habilite explícitamente
+  // en el backend (ver rest_post_collection_params en migrate-*.sh / WP). Si WordPress
+  // rechaza la petición por eso, reintentamos sin ordenar en vez de perder el contenido
+  // real y caer al fallback de mockData.
+  const orderedParams = new URLSearchParams(params);
+  orderedParams.set("orderby", "menu_order");
+  orderedParams.set("order", "asc");
+
+  let posts = await wpFetch<WpPost[]>(`/posts?${orderedParams.toString()}`);
+  if (!posts) {
+    posts = await wpFetch<WpPost[]>(`/posts?${params.toString()}`);
+  }
   if (!posts) return null;
   return posts.map(mapPost);
 }
