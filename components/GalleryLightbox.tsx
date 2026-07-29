@@ -29,7 +29,7 @@ export default function GalleryLightbox({ images, alt }: { images: string[]; alt
 
   return (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-4">
         {images.map((img, i) => (
           <button
             key={i}
