@@ -4,8 +4,6 @@ import type { NextConfig } from "next";
 const WP_HOSTNAME = "10.240.65.30";
 
 const nextConfig: NextConfig = {
-  basePath: "/impulsa",
-  assetPrefix: "/impulsa",
   eslint: {
     ignoreDuringBuilds: true,
   },
