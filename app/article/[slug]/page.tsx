@@ -145,6 +145,22 @@ export default async function ArticlePage({ params }: Props) {
                   </h2>
                 );
               }
+
+              const imageMatch = block.match(/^!\[\]\(([^)]+)\)$/);
+              if (imageMatch) {
+                return (
+                  <div key={i} className="relative w-full h-[360px] rounded-2xl overflow-hidden bg-gray-100">
+                    <Image
+                      src={imageMatch[1]}
+                      alt=""
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 60vw"
+                    />
+                  </div>
+                );
+              }
+
               return <p key={i}>{block}</p>;
             })}
           </div>

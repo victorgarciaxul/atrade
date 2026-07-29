@@ -70,6 +70,11 @@ function stripVideoEmbeds(html: string): string {
 function htmlToBody(html: string): string {
   return html
     .replace(/<h[1-4][^>]*>(.*?)<\/h[1-4]>/gi, "\n\n## $1\n\n")
+    // Bloques de imagen (<figure><img></figure> o <img> suelto): se convierten a
+    // "![](url)" ANTES de que el strip genérico de etiquetas los borre sin dejar
+    // rastro. El renderer de app/article/[slug]/page.tsx reconoce este marcador.
+    .replace(/<figure[^>]*>[\s\S]*?<img[^>]+src="([^"]+)"[^>]*>[\s\S]*?<\/figure>/gi, "\n\n![]($1)\n\n")
+    .replace(/<img[^>]+src="([^"]+)"[^>]*\/?>/gi, "\n\n![]($1)\n\n")
     .replace(/<\/p>\s*<p[^>]*>/gi, "\n\n")
     .replace(/<p[^>]*>/gi, "")
     .replace(/<\/p>/gi, "")
