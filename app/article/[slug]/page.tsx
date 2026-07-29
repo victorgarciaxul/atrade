@@ -69,7 +69,26 @@ export default async function ArticlePage({ params }: Props) {
     latest = allArticlesExtended.filter((a) => !usedIds.has(a.id)).slice(0, 4);
   }
 
-  const bodyBlocks = article.body?.split("\n\n") ?? [];
+  const allBodyBlocks = article.body?.split("\n\n") ?? [];
+
+  // Las imágenes embebidas en el contenido de WordPress (marcador ![](url), ver
+  // htmlToBody en lib/wordpress.ts) se sacan del flujo del cuerpo y se muestran
+  // con el mismo componente de galería con miniaturas + zoom que mockData.ts.
+  const IMAGE_BLOCK_RE = /^!\[\]\(([^)]+)\)$/;
+  const bodyGalleryImages = allBodyBlocks
+    .map((block) => block.match(IMAGE_BLOCK_RE)?.[1])
+    .filter((src): src is string => Boolean(src));
+
+  const bodyBlocks = allBodyBlocks.filter(
+    (block) =>
+      !IMAGE_BLOCK_RE.test(block) &&
+      // Si el propio contenido de WordPress trae un heading "Galería" justo antes
+      // de las imágenes, se omite: la sección de galería de abajo ya pone el suyo.
+      !(bodyGalleryImages.length > 0 && block.trim() === "## Galería")
+  );
+
+  const galleryImages =
+    article.gallery && article.gallery.length > 0 ? article.gallery : bodyGalleryImages;
 
   return (
     <main className="max-w-[1512px] mx-auto px-6 py-8">
@@ -146,30 +165,15 @@ export default async function ArticlePage({ params }: Props) {
                 );
               }
 
-              const imageMatch = block.match(/^!\[\]\(([^)]+)\)$/);
-              if (imageMatch) {
-                return (
-                  <div key={i} className="relative w-full h-[360px] rounded-2xl overflow-hidden bg-gray-100">
-                    <Image
-                      src={imageMatch[1]}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 60vw"
-                    />
-                  </div>
-                );
-              }
-
               return <p key={i}>{block}</p>;
             })}
           </div>
 
           {/* ── Galería de imágenes (si existe) ──────────────────── */}
-          {article.gallery && article.gallery.length > 0 && (
+          {galleryImages.length > 0 && (
             <div className="mt-10">
               <h3 className="font-brand text-primary text-[18px] font-[500] mb-4">Galería</h3>
-              <GalleryLightbox images={article.gallery} alt={article.title} />
+              <GalleryLightbox images={galleryImages} alt={article.title} />
             </div>
           )}
         </article>
