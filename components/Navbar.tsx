@@ -19,14 +19,14 @@ export default function Navbar() {
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-[1512px] mx-auto px-6 h-[68px] flex items-center justify-between gap-8">
-        <Link href="/" className="shrink-0">
+      <div className="max-w-[1512px] mx-auto px-6 h-[68px] flex items-center justify-between gap-3 lg:gap-8">
+        <Link href="/" className="shrink-0 min-w-0">
           <Image
             src="/header-logos.webp"
             alt="Andalucía TRADE — Junta de Andalucía, Consejería de Universidad, Industria, Energía e Innovación"
             width={1702}
             height={261}
-            className="h-12 w-auto"
+            className="h-8 sm:h-9 lg:h-12 w-auto"
             priority
           />
         </Link>
