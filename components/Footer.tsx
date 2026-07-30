@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const footerLinks = [
   { label: "Quiénes somos", href: "/categories" },
@@ -76,13 +77,15 @@ export default function Footer() {
       {/* Links */}
       <div className="max-w-[1512px] mx-auto px-6 py-8 flex flex-wrap gap-x-8 gap-y-3">
         {footerLinks.map((link) => (
-          <a
+          // next/link (y no un <a> plano) para que Next.js añada el basePath
+          // cuando la web se sirve bajo una subruta como /impulsa.
+          <Link
             key={link.label}
             href={link.href}
             className="text-white/70 text-sm hover:text-white transition-colors duration-200"
           >
             {link.label}
-          </a>
+          </Link>
         ))}
       </div>
 

@@ -1,6 +1,17 @@
 import { Article } from "./types";
 
-const WP_API_BASE = "http://10.240.65.30/wp-json/wp/v2";
+/**
+ * Host del WordPress del que se obtiene el contenido. Configurable con la
+ * variable de entorno WP_HOST (el mismo valor que usa next.config.ts para
+ * autorizar las imágenes); por defecto, el WordPress de preproducción.
+ *
+ * En producción hay que definir WP_HOST con el WordPress de esa máquina: si
+ * apunta a un host inalcanzable, la web cae silenciosamente al contenido de
+ * ejemplo de mockData.ts en vez de mostrar los artículos reales.
+ */
+const WP_HOSTNAME = process.env.WP_HOST ?? "10.240.65.30";
+
+const WP_API_BASE = `http://${WP_HOSTNAME}/wp-json/wp/v2`;
 
 /** Cuánto tiempo (segundos) cachea Next.js las respuestas antes de revalidar. */
 const REVALIDATE_SECONDS = 300;

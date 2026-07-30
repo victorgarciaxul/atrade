@@ -1,12 +1,10 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "TTFirsNeue";
-  src: url("/fonts/TTFirsNeue-DemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+/*
+ * La fuente TTFirsNeue se carga con next/font/local en app/layout.tsx (variable
+ * --font-ttfirs), NO con un @font-face aquí: una url("/fonts/...") en CSS no
+ * recibe el basePath y la fuente no cargaría al servir la web bajo /impulsa.
+ */
 
 @theme {
   /* Colors */

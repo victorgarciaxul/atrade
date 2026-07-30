@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -19,6 +20,15 @@ const inter = Inter({
   weight: ["300", "400", "500"],
 });
 
+// next/font/local sirve el fichero por el pipeline de assets de Next.js, que sí
+// respeta basePath/assetPrefix (a diferencia de un @font-face con url() en CSS).
+const ttFirsNeue = localFont({
+  src: "../public/fonts/TTFirsNeue-DemiBold.otf",
+  variable: "--font-ttfirs",
+  weight: "600",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Andalucía TRADE — Revista Digital",
   description: "La revista digital de Andalucía TRADE, agencia de la Junta de Andalucía.",
@@ -30,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${jakarta.variable} ${inter.variable}`}>
+    <html lang="es" className={`${jakarta.variable} ${inter.variable} ${ttFirsNeue.variable}`}>
       <body className="min-h-screen flex flex-col antialiased" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">{children}</main>
