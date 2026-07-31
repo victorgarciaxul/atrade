@@ -44,18 +44,6 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Search */}
-        <div className="hidden lg:flex items-center border border-gray-200 rounded-full px-3 h-[36px] gap-2 min-w-[160px]">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#001E78" strokeWidth="2">
-            <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-          </svg>
-          <input
-            type="text"
-            placeholder="Buscar"
-            className="bg-transparent text-[13px] text-primary placeholder:text-primary focus:outline-none w-full"
-          />
-        </div>
-
         {/* Mobile burger */}
         <button
           className="lg:hidden text-primary"
@@ -73,12 +61,6 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200 px-6 py-4 flex flex-col gap-4">
-          <div className="flex items-center border border-gray-200 rounded-full px-3 h-[36px] gap-2">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#001E78" strokeWidth="2">
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-            </svg>
-            <input type="text" placeholder="Buscar" className="bg-transparent text-[13px] text-primary placeholder:text-primary focus:outline-none w-full" />
-          </div>
           {navLinks.map((link) => (
             <Link
               key={link.label}
