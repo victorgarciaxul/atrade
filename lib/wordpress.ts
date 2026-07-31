@@ -49,13 +49,25 @@ interface WpCategory {
   slug: string;
 }
 
-function stripHtml(html: string): string {
-  return html
-    .replace(/<[^>]*>/g, " ")
+/**
+ * Decodifica las entidades HTML que devuelve WordPress (comillas tipográficas,
+ * guiones largos, puntos suspensivos…). Cubre todas las numéricas (&#8216;,
+ * &#8230;, etc.) y las nombradas más comunes, en vez de ir añadiéndolas una a una.
+ */
+function decodeEntities(text: string): string {
+  return text
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, n) => String.fromCodePoint(parseInt(n, 16)))
     .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&#8217;|&#039;/g, "'")
-    .replace(/&#8211;|&#8212;/g, "-")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&");
+}
+
+function stripHtml(html: string): string {
+  return decodeEntities(html.replace(/<[^>]*>/g, " "))
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -79,7 +91,7 @@ function stripVideoEmbeds(html: string): string {
 }
 
 function htmlToBody(html: string): string {
-  return html
+  const withoutTags = html
     .replace(/<h[1-4][^>]*>(.*?)<\/h[1-4]>/gi, "\n\n## $1\n\n")
     // Bloques de imagen (<figure><img></figure> o <img> suelto): se convierten a
     // "![](url)" ANTES de que el strip genérico de etiquetas los borre sin dejar
@@ -90,11 +102,8 @@ function htmlToBody(html: string): string {
     .replace(/<p[^>]*>/gi, "")
     .replace(/<\/p>/gi, "")
     .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&#8217;|&#039;/g, "'")
-    .replace(/&#8211;|&#8212;/g, "-")
+    .replace(/<[^>]+>/g, "");
+  return decodeEntities(withoutTags)
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 }
