@@ -11,7 +11,16 @@ import { Article } from "./types";
  */
 const WP_HOSTNAME = process.env.WP_HOST ?? "10.240.65.30";
 
-const WP_API_BASE = `http://${WP_HOSTNAME}/wp-json/wp/v2`;
+/**
+ * Raíz del WordPress y espacio de nombres de la API REST. Las peticiones se
+ * construyen con la forma ?rest_route=/wp/v2/... en vez de /wp-json/wp/v2/...
+ * (ver wpFetch): así la API responde con independencia de cómo tenga WordPress
+ * configurada su URL (siteurl/home) y sus enlaces permanentes. Es lo que permite
+ * que esta llamada interna por IP siga funcionando aunque WordPress se sirva bajo
+ * una subruta como /impulsa.
+ */
+const WP_API_ROOT = `http://${WP_HOSTNAME}`;
+const WP_REST_NAMESPACE = "/wp/v2";
 
 /** Cuánto tiempo (segundos) cachea Next.js las respuestas antes de revalidar. */
 const REVALIDATE_SECONDS = 300;
@@ -147,8 +156,14 @@ function mapPost(post: WpPost): Article {
 const FETCH_TIMEOUT_MS = 5000;
 
 async function wpFetch<T>(path: string): Promise<T | null> {
+  // path llega como "/recurso?query". Se separa la ruta de la query para montar
+  // la URL con ?rest_route=/wp/v2/recurso&query (forma independiente de permalinks).
+  const [route, query = ""] = path.split("?");
+  const url =
+    `${WP_API_ROOT}/?rest_route=${WP_REST_NAMESPACE}${route}` +
+    (query ? `&${query}` : "");
   try {
-    const res = await fetch(`${WP_API_BASE}${path}`, {
+    const res = await fetch(url, {
       next: { revalidate: REVALIDATE_SECONDS },
       signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
     });
